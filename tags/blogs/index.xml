@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogs on Ethan Holleman</title>
+    <link>https://ethanholleman.github.io/tags/blogs/</link>
+    <description>Recent content in blogs on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Casual virtual Poker with Zoom and PlayingCards.io</title>
+      <link>https://ethanholleman.github.io/posts/zoom_poker/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/zoom_poker/</guid>
+      <description>Recently a few of my friends and I wanted to do virtual Poker night. We where not interested in playing for cash and so I started looking around for an online platform to make it happen.
+Pretty much everything that comes up with a cursory google search did not satify my basic requirements but eventually I came across PlayingCards.io which provided what I think is the best solution for free, causal quaruntine poker nights.
+Step 1 is to set up your &amp;ldquo;table&amp;rdquo; with PlayingCards. Use this link to start building a table. Later once you finish setting everything up you can share the link to the table and others will be able to join, see and manipulate the objects on the table.</description>
+    </item>
+    
+    <item>
+      <title>Data and the Vietnam War</title>
+      <link>https://ethanholleman.github.io/posts/vietnam_data/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/vietnam_data/</guid>
+      <description>Turing the jungle into punchcards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&amp;rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&amp;rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
+One of the aspects of the war that fascinated me the most was the push by the the then Secretary of Defense, Robert McNamara, to quantify as much of the war as was computationally possible. One of the most storage intensive of McNamara&amp;rsquo;s efforts was the Hamlet Evaluation System, which attempted to quantify the degree to which ~12,000 small, rural Vietnamese villages had been pacified.</description>
+    </item>
+    
+    <item>
+      <title>Fishing at Putah Creek</title>
+      <link>https://ethanholleman.github.io/posts/putah_fishing/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/putah_fishing/</guid>
+      <description>Day trip out to Putah Creek in Winters CA.
+A few turkeys we saw before leaving Davis.
+The spot in the creek we picked out.
+Erica practicing casting.
+Testing out the waders.</description>
+    </item>
+    
+  </channel>
+</rss>

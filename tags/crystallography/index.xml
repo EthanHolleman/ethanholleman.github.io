@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crystallography on Ethan Holleman</title>
+    <link>https://ethanholleman.github.io/tags/crystallography/</link>
+    <description>Recent content in crystallography on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Nov 2020 13:49:27 -0800</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/crystallography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Polo</title>
+      <link>https://ethanholleman.github.io/projects/polo/</link>
+      <pubDate>Sun, 22 Nov 2020 13:49:27 -0800</pubDate>
+      
+      <guid>https://ethanholleman.github.io/projects/polo/</guid>
+      <description>This was a project I worked on as part of the BioXFEL summer internship program. I worked with Dr. Sarah Bowman and other members of Hauptman-Woodward Medical Research Institute (HWI).
+If you are short on time and don&amp;rsquo;t want to read these entire post here are the important links.
+ Polo website Polo poster Video Presentation  So what is &amp;ldquo;high-throughput crystallography&amp;rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence.</description>
+    </item>
+    
+  </channel>
+</rss>

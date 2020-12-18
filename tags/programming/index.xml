@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Ethan Holleman</title>
+    <link>https://ethanholleman.github.io/tags/programming/</link>
+    <description>Recent content in programming on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Nov 2020 13:49:27 -0800</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Polo</title>
+      <link>https://ethanholleman.github.io/projects/polo/</link>
+      <pubDate>Sun, 22 Nov 2020 13:49:27 -0800</pubDate>
+      
+      <guid>https://ethanholleman.github.io/projects/polo/</guid>
+      <description>This was a project I worked on as part of the BioXFEL summer internship program. I worked with Dr. Sarah Bowman and other members of Hauptman-Woodward Medical Research Institute (HWI).
+If you are short on time and don&amp;rsquo;t want to read these entire post here are the important links.
+ Polo website Polo poster Video Presentation  So what is &amp;ldquo;high-throughput crystallography&amp;rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence.</description>
+    </item>
+    
+    <item>
+      <title>Using local R packages on UC Davis Genome Center cluster</title>
+      <link>https://ethanholleman.github.io/posts/genome_cluster/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/genome_cluster/</guid>
+      <description>I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
+For example I would start R and install a package I needed and load the library with no problem.
+The code below would run without a problem.
+install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet)  But then calling the running the same script from a batch file fails to import the library.
+I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word.</description>
+    </item>
+    
+  </channel>
+</rss>

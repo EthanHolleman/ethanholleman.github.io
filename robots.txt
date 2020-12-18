@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://ethanholleman.github.io/sitemap.xml
