@@ -6,7 +6,18 @@
     <description>Recent content in poker on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/poker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/poker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poker Nights Running Results</title>
+      <link>https://ethanholleman.github.io/posts/running_winnings/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/running_winnings/</guid>
+      <description>Running stack sizes Shows each players cumulative stack over all nights played.
+ Winnings by date Plot of each players winnings (stack at the end of the night - buy in) over time.
+ </description>
+    </item>
+    
     <item>
       <title>Casual virtual Poker with Zoom and PlayingCards.io</title>
       <link>https://ethanholleman.github.io/posts/zoom_poker/</link>
