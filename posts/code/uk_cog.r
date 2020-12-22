@@ -1,7 +1,8 @@
 library(ape)
 library(stringr)
 library(RColorBrewer)
-library(ggplot)
+library(ggplot2)
+library(dplyr)
 
 read_tree <- function(){
   read.tree(file='cog_global_tree.newick')
@@ -78,5 +79,35 @@ legend_from_color_mapping <- function(color_mapping){
   legend(1, 95, col = unlist(color_mapping), legend = names(cm))
 }
 
-  
-  
+convert_date <- function(d){
+  d1 <- as.character(d)
+  as.Date(d1, format="%Y-%M-%D")
+}
+
+read_cog_metadata <- function(metadata_file){
+  df <- as.data.frame(read.csv(metadata_file))
+  df <- df %>% mutate(sample_date=as.Date(sample_date))
+}
+
+top_n_lineages <- function(lineages, n=10){
+  counts <- list()
+  lineages.uniq <- unique(lineages)
+  #print(lineages)
+  for (l in lineages.uniq){
+    counts[[l]] = sum(lineages == l)
+  }
+  counts <- counts[order(unlist(counts), decreasing=TRUE)]
+  counts[1:n]
+}
+
+lineages_over_time <- function(metadata_file, lineages){
+  df <- read_cog_metadata(metadata_file)
+  df <- subset(df, df$lineage %in% lineages)
+  ggplot(df, aes(x=sample_date, fill=lineage)) + theme_minimal() + 
+    geom_density(stat="count", alpha=0.6)  + 
+    theme(
+      text=element_text(size=15, face="bold"),
+      plot.margin = unit(c(1,1,1,1), "cm")) + 
+    theme(legend.position = "None") + facet_wrap(~lineage) + 
+    labs(x="", y="Genome count")  
+}

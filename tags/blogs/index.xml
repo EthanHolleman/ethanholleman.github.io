@@ -17,7 +17,7 @@
 All of their data is publicly available. Here I played around with the phylogenetic tree they have created from global alignments of all the genomes they have sequenced.
 You can download the tree in Newick format from their data page which also hosts sequences and the alignment files.
 Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by country Note this plot is log scale in the y-axis.
-Code used to make the above plots can be viewed here.</description>
+16 most prevalent UK COVID-19 lineages Density plots showing the number of genomes of the 16 most prevalent lineages detected by COG-UK.</description>
     </item>
     
     <item>
