@@ -107,9 +107,6 @@ dsa_by_force <- function(data){
     theme(text=element_text(size=15, face="bold")) + 
     facet_wrap(~FORCE, labeller = as_labeller(table2A())) + 
     theme(legend.position = "none")
-  
-
-  
 }
 
 convert_dates <- function(dates){
