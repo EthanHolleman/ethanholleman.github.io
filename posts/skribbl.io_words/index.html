@@ -15,7 +15,7 @@
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/ethanholleman.github.io/main/images/favicon.ico?token=AK5PLQBSVED75NNE3LLASBK74LOGS" />
 
 
-<title>Casual virtual Poker with Zoom and PlayingCards.io - Ethan Holleman</title>
+<title>Make custom Skribbl.io word banks using Reddit and Praw - Ethan Holleman</title>
 
 
 <meta name="author" content="Ethan Holleman" />
@@ -24,25 +24,25 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta name="keywords" content="poker, blogs" />
+<meta name="keywords" content="blogs, Python" />
 
-<meta property="og:title" content="Casual virtual Poker with Zoom and PlayingCards.io" />
-<meta property="og:description" content="Recently a few of my friends and I wanted to do virtual Poker night. We where not interested in playing for cash and so I started looking around for an online platform to make it happen.
-Pretty much everything that comes up with a cursory google search did not satisfy my basic requirements but eventually I came across PlayingCards.io which provided what I think is the best solution for free, causal quarantine poker nights.
-Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards. Use this link to start building a table. Later once you finish setting everything up you can share the link to the table and others will be able to join, see and manipulate the objects on the table." />
+<meta property="og:title" content="Make custom Skribbl.io word banks using Reddit and Praw" />
+<meta property="og:description" content="Skribbl.io is a great free quarantine / social distanced game where one person attempts to draw a word while everyone else guesses what they are drawing. When setting up the game you can supply your own list of comma separated words doing the game.
+The problem with doing this manually is that one person playing will know all the words.
+For an upcoming Zoom party I created a python command line application that takes in subreddit names and a few other parameters and using the Praw library retrieves the most commonly used words from the top comments of posts to a subreddit." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.github.io/posts/zoom_poker/" />
+<meta property="og:url" content="https://ethanholleman.github.io/posts/skribbl.io_words/" />
 <meta property="og:image" content="https://ethanholleman.github.io/img/og.png"/>
-<meta property="article:published_time" content="2020-12-15T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-15T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-12-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-28T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.github.io/img/og.png"/>
 
-<meta name="twitter:title" content="Casual virtual Poker with Zoom and PlayingCards.io"/>
-<meta name="twitter:description" content="Recently a few of my friends and I wanted to do virtual Poker night. We where not interested in playing for cash and so I started looking around for an online platform to make it happen.
-Pretty much everything that comes up with a cursory google search did not satisfy my basic requirements but eventually I came across PlayingCards.io which provided what I think is the best solution for free, causal quarantine poker nights.
-Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards. Use this link to start building a table. Later once you finish setting everything up you can share the link to the table and others will be able to join, see and manipulate the objects on the table."/>
+<meta name="twitter:title" content="Make custom Skribbl.io word banks using Reddit and Praw"/>
+<meta name="twitter:description" content="Skribbl.io is a great free quarantine / social distanced game where one person attempts to draw a word while everyone else guesses what they are drawing. When setting up the game you can supply your own list of comma separated words doing the game.
+The problem with doing this manually is that one person playing will know all the words.
+For an upcoming Zoom party I created a python command line application that takes in subreddit names and a few other parameters and using the Praw library retrieves the most commonly used words from the top comments of posts to a subreddit."/>
 
 
 
@@ -100,63 +100,103 @@ Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards. Use this link to
 <article>
     
     <h2 class="post-item post-title">
-        <a href="https://ethanholleman.github.io/posts/zoom_poker/">Casual virtual Poker with Zoom and PlayingCards.io</a>
+        <a href="https://ethanholleman.github.io/posts/skribbl.io_words/">Make custom Skribbl.io word banks using Reddit and Praw</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-15</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/poker">poker</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-28</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
 
     </div>
     
     
     <div class="post-content markdown-body">
-        <p>Recently a few of my friends and I wanted to do virtual Poker
-night. We where not interested in playing for cash and so I started
-looking around for an online platform to make it happen.</p>
-<p>Pretty much everything that comes up with a cursory google search did not satisfy
-my basic requirements but eventually I came across
-<a href="https://playingcards.io/" target="_blank">PlayingCards.io</a> which provided what I think
-is the best solution for free, causal quarantine poker nights.</p>
-<p>Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards.
-Use <a href="https://playingcards.io/game/standard-deck" target="_blank">this link</a> to start
-building a table. Later once you finish setting everything up you can
-share the link to the table and others will be able to join, see and
-manipulate the objects on the table.</p>
-<p>You can use the automation buttons to handle things like dealing, the
-flop, turn, river shuffling, as well as betting. The room I set up looks like this.</p>
-<p><img class="img-zoomable" src="/posts/images/table.png" alt="" />
-</p>
-<p>You can deal cards to each player using the <em>Deal</em> button and show each round
-of community cards using the respectively labeled button.
-<em>Empty</em> sets the pot to 0, <em>Reset</em> sets the pot to 0 and all player
-stacks to 100 and <em>Reveal</em> shows all players cards.</p>
-<p>The only thing that is a little clunky is betting and collecting your winnings.
-The automations allow you to add or subtract a value from a counter
-(which are used to keep track of each player&rsquo;s stack and the current pot)
-but not read from the state of another counter. This means you cannot create a
-button that adds the current value in the pot to a player&rsquo;s
-stack - this needs to be done by hand.</p>
-<p>Also anyone can press any button at any time; just something to keep in mind
-if playing with anyone that you thought of when reading that sentence.</p>
-<p><img class="img-zoomable" src="/posts/images/table_hand.png" alt="" />
-</p>
-<p>Note that cards placed into the &ldquo;hand&rdquo; area can only
-be seen by the player that put them there. This makes
-keeping your pocket cards secret from everyone else
-possible.</p>
-<p>If you don&rsquo;t want to set up your own room from scratch
-you can <a href="/posts/data/playingcards-io-export.zip">download the room I set up</a> and then
-load from that file.</p>
-<p>No Poker is actually done over Zoom, it is only used as the video call medium.</p>
-<p>It definitely look a couple hands to get used to using the interface but once
-things got going it worked really well. We found it also helps to keep
-track of your stack either on paper or using small text boxes on the
-virtual table.</p>
-<p>Here is a gif of me playing out a hand. Normally the other players would take
-their cards out of the dealt slots and keep them in their &ldquo;hand&rdquo; area where
-they are not visible to other players until showdown. If a player decides to
-fold they place their cards back into their dealt slots.</p>
-<p><img class="img-zoomable" src="/posts/images/hand.gif" alt="" />
-</p>
+        <p><a href="https://skribbl.io/" target="_blank">Skribbl.io</a> is a great free quarantine / social distanced
+game where one person attempts to draw a word while everyone else guesses what they
+are drawing. When setting up the game you can supply your own list of comma
+separated words doing the game.</p>
+<p>The problem with doing this manually is that one person playing will know all
+the words.</p>
+<p>For an upcoming Zoom party I created a python command line application that
+takes in subreddit names and a few other parameters and using the
+<a href="https://praw.readthedocs.io/en/latest/" target="_blank">Praw</a> library retrieves the most
+commonly used words from the top comments of posts to a subreddit.</p>
+<p>Since subreddits are generally devoted to a specific topic you can easily
+create pseudo-themed word banks by pulling comments from a category of
+topics and selecting subreddits under that banner.</p>
+<p>You can download the program from the <a href="https://github.com/EthanHolleman/Rskribbl" target="_blank">GitHub page</a>.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="install-dependencies">Install dependencies</h3>
+<p>The only dependcy you need is <code>Praw</code>. Install it with the command below.</p>
+<pre><code>pip install praw
+</code></pre>
+<h3 id="setup-api-keys">Setup API keys</h3>
+<p>If you want to run the program yourself you will need to get a <code>client id</code> and
+<code>client_secret</code> to use the Reddit API through Praw. The tutorial below has
+all the info you need (you only need to watch the setup portion).</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/NRgfgtzIhBQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>To be able to post this project on GitHub (relatively) safely I used environmental
+variables to store the values or my Reddit API credentials. You can do the same
+or modify the code of <code>collect_reddit_instance</code> function (shown below) in <code>collect.py</code>
+to use your credentials.</p>
+<pre><code class="language-python">def create_reddit_instance():
+    '''Create a Reddit instance using Praw library.
+
+    Returns:
+        Reddit: Reddit instance via Praw. Credentials set using environmental
+        variables.
+    '''
+    return praw.Reddit(client_id=os.environ['PRAW_CLIENT_ID'],
+                       client_secret=os.environ['PRAW_SECRET'],
+                       user_agent=os.environ['PRAW_USER_AGENT']
+                       )
+</code></pre>
+<p>Set values for <code>PRAW_CLIENT_ID</code>, <code>PRAW_SECRET</code> and <code>PRAW_USER_AGENT</code> or
+modify the code directly with your credentials.</p>
+<h3 id="run-the-program">Run the program</h3>
+<p>Once you have that set up you are ready to run the program by
+executing the <code>run.py</code> file. The help menu it will print is below.</p>
+<pre><code>python run.py --help
+usage: run.py [-h] [-r SUBREDDITS [SUBREDDITS ...]] [-n NUMBER_WORDS] [-mc COMMENT_LIMIT] [-o OUTPUT_DIR] [-f] [-p POST_LIMIT] [-l MIN_WORD_LENGTH]
+
+Harvest frequently words from subreddit comments using Praw
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r SUBREDDITS [SUBREDDITS ...], --subreddits SUBREDDITS [SUBREDDITS ...]
+                        List of subreddits to pull comments from
+  -n NUMBER_WORDS, --number_words NUMBER_WORDS
+                        Number of words to return per subreddit. Defaults to 25.
+  -mc COMMENT_LIMIT, --comment_limit COMMENT_LIMIT
+                        Max number of comments to harvest per subreddit. Defaults to 10,000
+  -o OUTPUT_DIR, --output_dir OUTPUT_DIR
+                        Output directory to write results to.
+  -f, --include_occurrences
+                        Include the number of times each word appears in the final output
+  -p POST_LIMIT, --post_limit POST_LIMIT
+                        Max number of posts to harvest from. Defaults to 50.
+  -l MIN_WORD_LENGTH, --min_word_length MIN_WORD_LENGTH
+                        Min word length. Defaults to 3 characters.
+</code></pre>
+<p>For example if I wanted to get the 10 most frequently used words from 100 comments
+from  <code>r/DataHoarder</code> I would use the command</p>
+<pre><code>python run.py -r &quot;DataHoarder&quot; -n 10 -mc 100
+</code></pre>
+<p>You can also specify multiple subreddits. The top word for each subreddit will
+be written to a separate text files.</p>
+<pre><code>python run.py -r &quot;DataHoarder&quot; &quot;Python&quot; &quot;arduino&quot; -n 10 -mc 100
+</code></pre>
+<h2 id="or-use-pre-harvested-words">Or use pre-harvested words</h2>
+<p>If you do not want to set up the program on your own computer I have already
+created lists of 25 most used words with 5 or more characters
+from top comments of the 100 most popular subreddits.</p>
+<p>You can download those files from the <a href="https://github.com/EthanHolleman/Rskribbl/tree/main/100_popular_subreddits" target="_blank">GitHib page here</a>.
+Words are listed on a single line separated by command for easier input into</p>
+<p><strong>NOTE</strong></p>
+<p><em>I have not reviewed all the words in these files and do not endorse
+any of the content that may be found within, this is the internet after all.</em></p>
 
     </div>
 </article>

@@ -6,7 +6,30 @@
     <description>Recent content in blogs on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make custom Skribbl.io word banks using Reddit and Praw</title>
+      <link>https://ethanholleman.github.io/posts/skribbl.io_words/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/skribbl.io_words/</guid>
+      <description>Skribbl.io is a great free quarantine / social distanced game where one person attempts to draw a word while everyone else guesses what they are drawing. When setting up the game you can supply your own list of comma separated words doing the game.
+The problem with doing this manually is that one person playing will know all the words.
+For an upcoming Zoom party I created a python command line application that takes in subreddit names and a few other parameters and using the Praw library retrieves the most commonly used words from the top comments of posts to a subreddit.</description>
+    </item>
+    
+    <item>
+      <title>Plotting COVID-19 Hospitalization Geo-Spacial Data</title>
+      <link>https://ethanholleman.github.io/posts/covid_data/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/covid_data/</guid>
+      <description>After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
+User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
+There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
+The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A.</description>
+    </item>
+    
     <item>
       <title>Plotting COG-UK Data</title>
       <link>https://ethanholleman.github.io/posts/cog_sars/</link>

@@ -15,7 +15,7 @@
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/ethanholleman.github.io/main/images/favicon.ico?token=AK5PLQBSVED75NNE3LLASBK74LOGS" />
 
 
-<title>Casual virtual Poker with Zoom and PlayingCards.io - Ethan Holleman</title>
+<title>Plotting COVID-19 Hospitalization Geo-Spacial Data - Ethan Holleman</title>
 
 
 <meta name="author" content="Ethan Holleman" />
@@ -24,25 +24,27 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta name="keywords" content="poker, blogs" />
+<meta name="keywords" content="programming, R, blogs" />
 
-<meta property="og:title" content="Casual virtual Poker with Zoom and PlayingCards.io" />
-<meta property="og:description" content="Recently a few of my friends and I wanted to do virtual Poker night. We where not interested in playing for cash and so I started looking around for an online platform to make it happen.
-Pretty much everything that comes up with a cursory google search did not satisfy my basic requirements but eventually I came across PlayingCards.io which provided what I think is the best solution for free, causal quarantine poker nights.
-Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards. Use this link to start building a table. Later once you finish setting everything up you can share the link to the table and others will be able to join, see and manipulate the objects on the table." />
+<meta property="og:title" content="Plotting COVID-19 Hospitalization Geo-Spacial Data" />
+<meta property="og:description" content="After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
+User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
+There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
+The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.github.io/posts/zoom_poker/" />
+<meta property="og:url" content="https://ethanholleman.github.io/posts/covid_data/" />
 <meta property="og:image" content="https://ethanholleman.github.io/img/og.png"/>
-<meta property="article:published_time" content="2020-12-15T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-15T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-12-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-24T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.github.io/img/og.png"/>
 
-<meta name="twitter:title" content="Casual virtual Poker with Zoom and PlayingCards.io"/>
-<meta name="twitter:description" content="Recently a few of my friends and I wanted to do virtual Poker night. We where not interested in playing for cash and so I started looking around for an online platform to make it happen.
-Pretty much everything that comes up with a cursory google search did not satisfy my basic requirements but eventually I came across PlayingCards.io which provided what I think is the best solution for free, causal quarantine poker nights.
-Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards. Use this link to start building a table. Later once you finish setting everything up you can share the link to the table and others will be able to join, see and manipulate the objects on the table."/>
+<meta name="twitter:title" content="Plotting COVID-19 Hospitalization Geo-Spacial Data"/>
+<meta name="twitter:description" content="After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
+User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
+There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
+The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A."/>
 
 
 
@@ -100,63 +102,42 @@ Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards. Use this link to
 <article>
     
     <h2 class="post-item post-title">
-        <a href="https://ethanholleman.github.io/posts/zoom_poker/">Casual virtual Poker with Zoom and PlayingCards.io</a>
+        <a href="https://ethanholleman.github.io/posts/covid_data/">Plotting COVID-19 Hospitalization Geo-Spacial Data</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-15</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/poker">poker</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-24</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
 
     </div>
     
     
     <div class="post-content markdown-body">
-        <p>Recently a few of my friends and I wanted to do virtual Poker
-night. We where not interested in playing for cash and so I started
-looking around for an online platform to make it happen.</p>
-<p>Pretty much everything that comes up with a cursory google search did not satisfy
-my basic requirements but eventually I came across
-<a href="https://playingcards.io/" target="_blank">PlayingCards.io</a> which provided what I think
-is the best solution for free, causal quarantine poker nights.</p>
-<p>Step 1 is to set up your &ldquo;table&rdquo; with PlayingCards.
-Use <a href="https://playingcards.io/game/standard-deck" target="_blank">this link</a> to start
-building a table. Later once you finish setting everything up you can
-share the link to the table and others will be able to join, see and
-manipulate the objects on the table.</p>
-<p>You can use the automation buttons to handle things like dealing, the
-flop, turn, river shuffling, as well as betting. The room I set up looks like this.</p>
-<p><img class="img-zoomable" src="/posts/images/table.png" alt="" />
+        <p>After finding the COG-UK data I was looking around for other interesting
+COVID-19 datasets to play around with and build my R plotting skills with.</p>
+<p>User <code>moritz.kraemer</code> posted
+<a href="https://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337" target="_blank">this article</a>
+on early case descriptions
+which included a lot of geo-spacial data that I was interested in takeing a
+look at.</p>
+<p>There was a significant number of fields devoted to hospitalization related
+measurements and so I focused on that subject for the plot below.</p>
+<p><img class="img-zoomable" src="/posts/images/all_plots.jpg" alt="" />
 </p>
-<p>You can deal cards to each player using the <em>Deal</em> button and show each round
-of community cards using the respectively labeled button.
-<em>Empty</em> sets the pot to 0, <em>Reset</em> sets the pot to 0 and all player
-stacks to 100 and <em>Reveal</em> shows all players cards.</p>
-<p>The only thing that is a little clunky is betting and collecting your winnings.
-The automations allow you to add or subtract a value from a counter
-(which are used to keep track of each player&rsquo;s stack and the current pot)
-but not read from the state of another counter. This means you cannot create a
-button that adds the current value in the pot to a player&rsquo;s
-stack - this needs to be done by hand.</p>
-<p>Also anyone can press any button at any time; just something to keep in mind
-if playing with anyone that you thought of when reading that sentence.</p>
-<p><img class="img-zoomable" src="/posts/images/table_hand.png" alt="" />
-</p>
-<p>Note that cards placed into the &ldquo;hand&rdquo; area can only
-be seen by the player that put them there. This makes
-keeping your pocket cards secret from everyone else
-possible.</p>
-<p>If you don&rsquo;t want to set up your own room from scratch
-you can <a href="/posts/data/playingcards-io-export.zip">download the room I set up</a> and then
-load from that file.</p>
-<p>No Poker is actually done over Zoom, it is only used as the video call medium.</p>
-<p>It definitely look a couple hands to get used to using the interface but once
-things got going it worked really well. We found it also helps to keep
-track of your stack either on paper or using small text boxes on the
-virtual table.</p>
-<p>Here is a gif of me playing out a hand. Normally the other players would take
-their cards out of the dealt slots and keep them in their &ldquo;hand&rdquo; area where
-they are not visible to other players until showdown. If a player decides to
-fold they place their cards back into their dealt slots.</p>
-<p><img class="img-zoomable" src="/posts/images/hand.gif" alt="" />
-</p>
+<p>The dataset includes patients with and without hospitalization records and so
+first I filtered down to just those with records and those who also had
+location data. This subset of patients formed subplot A. Clearly this is not
+an exhaustive dataset and seems to focus on hospitalizations for China, France,
+and Argentina.</p>
+<p>Subplot B shows hospitalizations by date, which for this dataset, really pick
+up in April. However, this is not super informative due to ~90 % of the data
+being localized to three countries.</p>
+<p>Finally, subplot C includes two boxplots. The first shows the difference in days
+between a patient experiencing symptoms and admission to a hospital. A negative
+value indicates days before admission. So a patient with a value of -10 would
+mean the patient experienced symptoms 10 days before being admitted. The second
+boxplot shows the length of stay once admitted. It should be noted that this
+dataset lumps deaths and discharges into the same category <code>date_death_or_discharge</code>.
+The mean stay once admitted was ~10 days.</p>
+<p>The R code to generate these plots can be <a href="/posts/code/covid_hos.r">viewed here</a></p>
 
     </div>
 </article>
