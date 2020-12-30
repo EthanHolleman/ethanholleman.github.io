@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges.</title>
+      <link>https://ethanholleman.github.io/posts/gromacs_install/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/gromacs_install/</guid>
+      <description>Are you using the UC Davis FARM for molecular modeling and need to figure out how to setup GROMACS? Well hello extremely small subset of the population! This is the guide for you.
+Note, this is only for a basic installation. For maximum performance refer to the GROMACS guide linked above.
+Getting started We will be working off the installation instructions on the GROMACS website but will modify a few steps to deal with the quirks of the FARM at the time of writing and the fact you will not have sudo privileges.
+If you want to cut to the chase, you can run this script, which will run all the code in this guide in one go.</description>
+    </item>
+    
+    <item>
       <title>Day trip to Yosemite</title>
       <link>https://ethanholleman.github.io/posts/yosemite/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>

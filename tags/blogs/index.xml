@@ -6,7 +6,19 @@
     <description>Recent content in blogs on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.github.io/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges.</title>
+      <link>https://ethanholleman.github.io/posts/gromacs_install/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/gromacs_install/</guid>
+      <description>Are you using the UC Davis FARM for molecular modeling and need to figure out how to setup GROMACS? Well hello extremely small subset of the population! This is the guide for you.
+Note, this is only for a basic installation. For maximum performance refer to the GROMACS guide linked above.
+Getting started We will be working off the installation instructions on the GROMACS website but will modify a few steps to deal with the quirks of the FARM at the time of writing and the fact you will not have sudo privileges.
+If you want to cut to the chase, you can run this script, which will run all the code in this guide in one go.</description>
+    </item>
+    
     <item>
       <title>Day trip to Yosemite</title>
       <link>https://ethanholleman.github.io/posts/yosemite/</link>
@@ -120,6 +132,19 @@ A few turkeys we saw before leaving Davis.
 The spot in the creek we picked out.
 Erica practicing casting.
 Testing out the waders.</description>
+    </item>
+    
+    <item>
+      <title>Using local R packages on UC Davis Genome Center cluster</title>
+      <link>https://ethanholleman.github.io/posts/genome_cluster/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.github.io/posts/genome_cluster/</guid>
+      <description>I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
+For example I would start R and install a package I needed and load the library with no problem.
+The code below would run without a problem.
+install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet)  But then calling the running the same script from a batch file fails to import the library.
+I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word.</description>
     </item>
     
   </channel>

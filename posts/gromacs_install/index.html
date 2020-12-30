@@ -15,27 +15,36 @@
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/ethanholleman.github.io/main/images/favicon.ico?token=AK5PLQBSVED75NNE3LLASBK74LOGS" />
 
 
-<title>Projects - Ethan Holleman</title>
+<title>Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges. - Ethan Holleman</title>
 
 
 <meta name="author" content="Ethan Holleman" />
 
 
-<meta name="description" content="Landing page for projects" />
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta property="og:title" content="Projects" />
-<meta property="og:description" content="Landing page for projects" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ethanholleman.github.io/projects/" />
+<meta name="keywords" content="programming, blogs, guides" />
+
+<meta property="og:title" content="Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges." />
+<meta property="og:description" content="Are you using the UC Davis FARM for molecular modeling and need to figure out how to setup GROMACS? Well hello extremely small subset of the population! This is the guide for you.
+Note, this is only for a basic installation. For maximum performance refer to the GROMACS guide linked above.
+Getting started We will be working off the installation instructions on the GROMACS website but will modify a few steps to deal with the quirks of the FARM at the time of writing and the fact you will not have sudo privileges.
+If you want to cut to the chase, you can run this script, which will run all the code in this guide in one go." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ethanholleman.github.io/posts/gromacs_install/" />
 <meta property="og:image" content="https://ethanholleman.github.io/img/og.png"/>
-<meta property="og:updated_time" content="2020-11-22T13:49:27-08:00" />
+<meta property="article:published_time" content="2020-12-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-30T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.github.io/img/og.png"/>
 
-<meta name="twitter:title" content="Projects"/>
-<meta name="twitter:description" content="Landing page for projects"/>
+<meta name="twitter:title" content="Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges."/>
+<meta name="twitter:description" content="Are you using the UC Davis FARM for molecular modeling and need to figure out how to setup GROMACS? Well hello extremely small subset of the population! This is the guide for you.
+Note, this is only for a basic installation. For maximum performance refer to the GROMACS guide linked above.
+Getting started We will be working off the installation instructions on the GROMACS website but will modify a few steps to deal with the quirks of the FARM at the time of writing and the fact you will not have sudo privileges.
+If you want to cut to the chase, you can run this script, which will run all the code in this guide in one go."/>
 
 
 
@@ -90,32 +99,92 @@
             
             <div class="col-12 col-md-9 float-left content">
                 
-
-<div></div>
-
-
-
-
-<div class="post">
+<article>
+    
     <h2 class="post-item post-title">
-        <a href="https://ethanholleman.github.io/projects/polo/">Polo</a>
+        <a href="https://ethanholleman.github.io/posts/gromacs_install/">Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges.</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-11-22</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/crystallography">crystallography</a>&nbsp;<a href="/tags/research">research</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-30</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/guides">guides</a>&nbsp;</span>
 
     </div>
-    <div class="post-item post-summary markdown-body">
-        This was a project I worked on as part of the BioXFEL summer internship program. I worked with Dr. Sarah Bowman and other members of Hauptman-Woodward Medical Research Institute (HWI).
-If you are short on time and don&rsquo;t want to read these entire post here are the important links.
- Polo website Polo poster Video Presentation  So what is &ldquo;high-throughput crystallography&rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence.
+    
+    
+    <div class="post-content markdown-body">
+        <p>Are you using the UC Davis <a href="https://wiki.cse.ucdavis.edu/support/systems/farm" target="_blank">FARM</a>
+for molecular modeling and need to figure out
+how to setup <a href="http://www.gromacs.org/" target="_blank">GROMACS</a>? Well hello extremely small subset
+of the population! This is the guide for you.</p>
+<p>Note, this is only for a basic installation. For maximum performance refer to the
+GROMACS guide linked above.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>We will be working off the installation instructions on the
+<a href="http://www.gromacs.org/Documentation_of_outdated_versions/Installation_Instructions_5.0#TOC" target="_blank">GROMACS website</a>
+but will modify a few steps to deal with the quirks of the FARM at the time
+of writing and the fact you will not have <code>sudo</code> privileges.</p>
+<p>If you want to cut to the chase, you can <a href="/posts/code/farm_install_gromacs.sh">run this script</a>, which will
+run all the code in this guide in one go. Everything will be downloaded / complied
+in the directory you run the script in. You can use the command below to download
+the script, give it permission to run, and then run it.</p>
+<pre><code class="language-bash">wget http://ethanholleman.github.io/posts/code/farm_install_gromacs.sh; chmod 777 farm_install_gromacs.sh; ./farm_install_gromacs.sh
+</code></pre>
+<p>With that in mind the first thing to do is select a directory where you will
+download everything, <code>cd</code> into it and get going.</p>
+<h2 id="download-and-install-a-recent-cmake-version">Download and install a recent <code>cmake</code> version</h2>
+<p>At the time of writing, the FARM is running <code>cmake 3.10.2</code> while GROMACS requires
+at least <code>3.13.0</code> to build. I will be downloading <code>3.19.2</code> as it is the most
+recent at the time of writing. If you are downloading a different version
+you will have to modify some of the commands to reflect that (this will be
+true for all downloaded programs).</p>
+<p>Download and run the install with the commands below</p>
+<pre><code class="language-bash">wget https://github.com/Kitware/CMake/releases/download/v3.19.2/cmake-3.19.2-Linux-x86_64.sh
+chmod 777 cmake-3.19.2-Linux-x86_64.sh
+echo &quot;Running cmake installer&quot;
+./cmake-3.19.2-Linux-x86_64.sh
+</code></pre>
+<h2 id="download-and-compile-gromacs">Download and compile GROMACS</h2>
+<p>Download your preferred version of GROMACS from <a href="https://manual.gromacs.org/" target="_blank">the docs</a>,
+I will be using <code>2021-rc1</code> for this guide.</p>
+<pre><code class="language-bash">wget http://ftp.gromacs.org/pub/gromacs/gromacs-2021-rc1.tar.gz 
+tar xfz gromacs-2021-rc1.tar.gz
+</code></pre>
+<p>Now enter into the newly downloaded GROMACS directory and create a build directory.</p>
+<pre><code class="language-bash">cd gromacs-2021-rc1
+mkdir build
+cd build
+</code></pre>
+<p>From the build directory run the newly downloaded <code>cmake</code> version by determinging
+the path to the <code>cmake</code> exe. It will be located in folder produced by the <code>cmake</code>
+installer. For me, the full path was
+<code>/home/ethollem/software/cmake-3.19.2-Linux-x86_64/cmake-3.19.2-Linux-x86_64/bin/cmake</code>.</p>
+<p>Then run <code>cmake</code> with your version subsituted into <code>[cmake]</code> below.</p>
+<pre><code class="language-bash">[cmake] .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
+</code></pre>
+<p>Then make the program (this could take a while).</p>
+<pre><code class="language-bash">make
+make check
+</code></pre>
+<p>The GROMACS guide recommends the following command</p>
+<pre><code class="language-bash">sudo make install
+</code></pre>
+<p>but since we do not have sudo privileges to run the program we can add the
+exe path to a variable in <code>~/.profile</code> to use GROMACS from anywhere. From the
+build directory the GROMACS exe path will be <code>[Your absolute path to build dir]/bin/gmx</code>.
+For me this looks like <code>home/ethollem/software/gromacs-2021-rc1/build/bin/gmx</code>.</p>
+<p>Open / create <code>~/.profile</code> using your preferred text editor and add the line</p>
+<pre><code class="language-bash">export gmx=&quot;/home/ethollem/software/gromacs-2021-rc1/build/bin/gmx&quot;
+</code></pre>
+<p>Then log off and log back in again. Test everything is working correctly by running</p>
+<pre><code class="language-bash">$gmx --help
+</code></pre>
+<p>You should be greeted wih the GROMACS help page. If you are you are now good
+to go.</p>
+<p>This is not ideal as you will have to run <code>GROMACS</code> using <code>$gmx</code> instead of
+<code>gmx</code> but since we cannot create symbolic links to files in <code>/usr/local/bin</code>
+it is the solution I am working with for now.</p>
+
     </div>
-</div>
-
-
-
-
-
-
+</article>
 
 
 
@@ -343,6 +412,8 @@ If you are short on time and don&rsquo;t want to read these entire post here are
             
         </div>
     </div>
+    
+    
     
     
   </div>
