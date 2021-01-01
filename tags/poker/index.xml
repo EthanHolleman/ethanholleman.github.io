@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>poker on Ethan Holleman</title>
-    <link>http://ethanholleman.github.io/tags/poker/</link>
+    <link>https://ethanholleman.com/tags/poker/</link>
     <description>Recent content in poker on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://ethanholleman.github.io/tags/poker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/poker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poker Nights Running Results</title>
-      <link>http://ethanholleman.github.io/posts/running_winnings/</link>
+      <link>https://ethanholleman.com/posts/running_winnings/</link>
       <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.github.io/posts/running_winnings/</guid>
+      <guid>https://ethanholleman.com/posts/running_winnings/</guid>
       <description>Running stack sizes Shows each players cumulative stack over all nights played.
  Winnings by date Plot of each players winnings (stack at the end of the round - buy in) over time.
  All games have been played virtually, for info on how we host these see this post.</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>Casual virtual Poker with Zoom and PlayingCards.io</title>
-      <link>http://ethanholleman.github.io/posts/zoom_poker/</link>
+      <link>https://ethanholleman.com/posts/zoom_poker/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.github.io/posts/zoom_poker/</guid>
+      <guid>https://ethanholleman.com/posts/zoom_poker/</guid>
       <description>Update I recently found a number of .io type websites devoted specifically to poker (not sure why didn&amp;rsquo;t think to search poker .io earlier) which get around the main issues of playing using playingcards.io.
 I would highly, highly recommend using lipoker.io. It handles betting with shortcuts for bets based on pot or blind sizes, handles turns automatically and does not require a sign up.
 For Poker, lipoker is supporior in every way to PlayingCards.io due to being designed for this specific game. If for some reason you would still like to use PlayingCards.io continue reading, otherwise stop and use lipoker.io.</description>
