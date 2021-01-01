@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>programming on Ethan Holleman</title>
-    <link>http://ethanholleman.com/tags/programming/</link>
+    <link>http://ethanholleman.github.io/tags/programming/</link>
     <description>Recent content in programming on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://ethanholleman.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://ethanholleman.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges.</title>
-      <link>http://ethanholleman.com/posts/gromacs_install/</link>
+      <link>http://ethanholleman.github.io/posts/gromacs_install/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.com/posts/gromacs_install/</guid>
+      <guid>http://ethanholleman.github.io/posts/gromacs_install/</guid>
       <description>Are you using the UC Davis FARM for molecular modeling and need to figure out how to setup GROMACS? Well hello extremely small subset of the population! This is the guide for you.
 Note, this is only for a basic installation. For maximum performance refer to the GROMACS guide linked above.
 Getting started We will be working off the installation instructions on the GROMACS website but will modify a few steps to deal with the quirks of the FARM at the time of writing and the fact you will not have sudo privileges.
@@ -21,10 +21,10 @@ If you want to cut to the chase, you can run this script, which will run all the
     
     <item>
       <title>Plotting COVID-19 Hospitalization Geo-Spacial Data</title>
-      <link>http://ethanholleman.com/posts/covid_data/</link>
+      <link>http://ethanholleman.github.io/posts/covid_data/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.com/posts/covid_data/</guid>
+      <guid>http://ethanholleman.github.io/posts/covid_data/</guid>
       <description>After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
 User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
 There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
@@ -33,10 +33,10 @@ The dataset includes patients with and without hospitalization records and so fi
     
     <item>
       <title>Plotting COG-UK Data</title>
-      <link>http://ethanholleman.com/posts/cog_sars/</link>
+      <link>http://ethanholleman.github.io/posts/cog_sars/</link>
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.com/posts/cog_sars/</guid>
+      <guid>http://ethanholleman.github.io/posts/cog_sars/</guid>
       <description>The Covid-19 Genomics UK Consortium has been collecting and sequencing thousands of COVID-19 genomes from patients in the UK and around the world.
 All of their data is publicly available. Here I played around with the phylogenetic tree they have created from global alignments of all the genomes they have sequenced.
 You can download the tree in Newick format from their data page which also hosts sequences and the alignment files.
@@ -46,10 +46,10 @@ Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by 
     
     <item>
       <title>Polo</title>
-      <link>http://ethanholleman.com/projects/polo/</link>
+      <link>http://ethanholleman.github.io/projects/polo/</link>
       <pubDate>Sun, 22 Nov 2020 13:49:27 -0800</pubDate>
       
-      <guid>http://ethanholleman.com/projects/polo/</guid>
+      <guid>http://ethanholleman.github.io/projects/polo/</guid>
       <description>This was a project I worked on as part of the BioXFEL summer internship program. I worked with Dr. Sarah Bowman and other members of Hauptman-Woodward Medical Research Institute (HWI).
 If you are short on time and don&amp;rsquo;t want to read these entire post here are the important links.
  Polo website Polo poster Video Presentation  So what is &amp;ldquo;high-throughput crystallography&amp;rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence.</description>
@@ -57,10 +57,10 @@ If you are short on time and don&amp;rsquo;t want to read these entire post here
     
     <item>
       <title>Using local R packages on UC Davis Genome Center cluster</title>
-      <link>http://ethanholleman.com/posts/genome_cluster/</link>
+      <link>http://ethanholleman.github.io/posts/genome_cluster/</link>
       <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.com/posts/genome_cluster/</guid>
+      <guid>http://ethanholleman.github.io/posts/genome_cluster/</guid>
       <description>I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
 For example I would start R and install a package I needed and load the library with no problem.
 The code below would run without a problem.

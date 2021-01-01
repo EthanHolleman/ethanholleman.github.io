@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Ethan Holleman</title>
-    <link>http://ethanholleman.com/tags/r/</link>
+    <link>http://ethanholleman.github.io/tags/r/</link>
     <description>Recent content in R on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://ethanholleman.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://ethanholleman.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plotting COVID-19 Hospitalization Geo-Spacial Data</title>
-      <link>http://ethanholleman.com/posts/covid_data/</link>
+      <link>http://ethanholleman.github.io/posts/covid_data/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.com/posts/covid_data/</guid>
+      <guid>http://ethanholleman.github.io/posts/covid_data/</guid>
       <description>After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
 User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
 There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
@@ -21,10 +21,10 @@ The dataset includes patients with and without hospitalization records and so fi
     
     <item>
       <title>Plotting COG-UK Data</title>
-      <link>http://ethanholleman.com/posts/cog_sars/</link>
+      <link>http://ethanholleman.github.io/posts/cog_sars/</link>
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ethanholleman.com/posts/cog_sars/</guid>
+      <guid>http://ethanholleman.github.io/posts/cog_sars/</guid>
       <description>The Covid-19 Genomics UK Consortium has been collecting and sequencing thousands of COVID-19 genomes from patients in the UK and around the world.
 All of their data is publicly available. Here I played around with the phylogenetic tree they have created from global alignments of all the genomes they have sequenced.
 You can download the tree in Newick format from their data page which also hosts sequences and the alignment files.
