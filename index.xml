@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>PotOddsQuiz.com: A 1 day intro to Javascript and CSS</title>
+      <link>https://ethanholleman.com/posts/potodds/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/potodds/</guid>
+      <description>I spent most of the day today learning about Javascript and CSS by building a (very ameutur) website that you can use to test your Poker pot odds calculation skills.
+Determining pot odds is useful as when compared to the probability of winning a hand the call&amp;rsquo;s expected value can be approximated.
+You can visit the website at potoddsquiz.com view the the code at the GitHub page or use the website embedded directly below.
+ This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.</description>
+    </item>
+    
+    <item>
       <title>Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges.</title>
       <link>https://ethanholleman.com/posts/gromacs_install/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
