@@ -107,7 +107,8 @@ California changes a man </description>
       <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ethanholleman.com/posts/running_winnings/</guid>
-      <description>Running stack sizes Shows each players cumulative stack over all nights played.
+      <description>Y axis of all plots are unit-less.
+Running stack sizes Shows each players cumulative stack over all nights played.
  Winnings by date Plot of each players winnings (stack at the end of the round - buy in) over time.
  All games have been played virtually, for info on how we host these see this post.</description>
     </item>
