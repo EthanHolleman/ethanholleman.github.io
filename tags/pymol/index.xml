@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PyMOL on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/pymol/</link>
+    <description>Recent content in PyMOL on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/pymol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualizing ligand docking results with PyMOL scripting and R</title>
+      <link>https://ethanholleman.com/posts/ligand_plotting/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/ligand_plotting/</guid>
+      <description>The past couple days I have been running some ligand docking simulations as part of my current rotation with the Cortopasssi lab using Rosetta. One of these docking simulations involved fitting a small portion of the insulin receptor (IR) the lab is interested in, into a known binding region of the Shc1 protein.
+Any Rosetta docking simulation will require hundreds of repetitions, which generate a significant number of pdb files which show the final conformation of the protein and ligand at the end of a given simulation.
+While reading about the best way to aggregate and do analyise on these results I spent a bit of time looking for ways to visualize everything Rosetta spits out.</description>
+    </item>
+    
+  </channel>
+</rss>

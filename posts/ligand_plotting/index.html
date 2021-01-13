@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.78.2" />
+
+
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
+
+
+<title>Visualizing ligand docking results with PyMOL scripting and R - Ethan Holleman</title>
+
+
+<meta name="author" content="Ethan Holleman" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="programming, blogs, Python, R, PyMOL" />
+
+<meta property="og:title" content="Visualizing ligand docking results with PyMOL scripting and R" />
+<meta property="og:description" content="The past couple days I have been running some ligand docking simulations as part of my current rotation with the Cortopasssi lab using Rosetta. One of these docking simulations involved fitting a small portion of the insulin receptor (IR) the lab is interested in, into a known binding region of the Shc1 protein.
+Any Rosetta docking simulation will require hundreds of repetitions, which generate a significant number of pdb files which show the final conformation of the protein and ligand at the end of a given simulation.
+While reading about the best way to aggregate and do analyise on these results I spent a bit of time looking for ways to visualize everything Rosetta spits out." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ethanholleman.com/posts/ligand_plotting/" />
+<meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
+<meta property="article:published_time" content="2021-01-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-12T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
+
+<meta name="twitter:title" content="Visualizing ligand docking results with PyMOL scripting and R"/>
+<meta name="twitter:description" content="The past couple days I have been running some ligand docking simulations as part of my current rotation with the Cortopasssi lab using Rosetta. One of these docking simulations involved fitting a small portion of the insulin receptor (IR) the lab is interested in, into a known binding region of the Shc1 protein.
+Any Rosetta docking simulation will require hundreds of repetitions, which generate a significant number of pdb files which show the final conformation of the protein and ligand at the end of a given simulation.
+While reading about the best way to aggregate and do analyise on these results I spent a bit of time looking for ways to visualize everything Rosetta spits out."/>
+
+
+
+
+
+<link rel="stylesheet" href="https://ethanholleman.com/assets/css/fuji.min.css" />
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-84NGXGRHE8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-84NGXGRHE8');
+</script>
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://ethanholleman.com">Ethan Holleman</a>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://ethanholleman.com/posts/ligand_plotting/">Visualizing ligand docking results with PyMOL scripting and R</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-01-12</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/pymol">PyMOL</a>&nbsp;</span>
+
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>The past couple days I have been running some ligand docking simulations as
+part of my current rotation with the <a href="http://www.cortopassilab.com/" target="_blank">Cortopasssi lab</a>
+using <a href="https://www.rosettacommons.org/" target="_blank">Rosetta</a>.
+One of these docking simulations involved fitting a small portion of the insulin
+receptor (IR) the lab is interested in, into a known binding region of the Shc1
+protein.</p>
+<p>Any Rosetta docking simulation will require hundreds of repetitions, which
+generate a significant number of <code>pdb</code> files which show the final conformation
+of the protein and ligand at the end of a given simulation.</p>
+<p>While reading about the best way to aggregate and do analyise on these results
+I spent a bit of time looking for ways to visualize everything Rosetta spits out.</p>
+<p>This was partly to sanity check the results quickly and also because 3D protein
+structures and plots just tend to look cool.</p>
+<h2 id="individual-images-using-pymol">Individual images using PyMOL</h2>
+<p>The initial simulation I ran produced 200 <code>pdb </code>files. One approach would be to
+create images of the ligand-protein interface for each of these <code>pdb</code> files.</p>
+<p>To do this for 200 images I created a very hacky Python script that collects
+all the <code>pdb</code> files in a directory then creates a temporary PyMOL script which
+takes a nice picture of the ligand-protein interface.</p>
+<p>This Python script is basically just a for loop but below is the PyMOL script
+that I used. All the <code>{}</code> are filled in using the <code>format</code> function in python
+with the correct filepaths for a specific <code>pdb</code> file.</p>
+<pre><code>load {}  # load this pdb file
+
+hide everything
+set cartoon_fancy_helices = 1
+set cartoon_highlight_color = grey70
+bg_colour white
+set antialias = 1
+set ortho = 1
+set sphere_mode, 5
+
+
+select ligand, hetatm
+select pocket, ligand around 4
+select pocket, byres pocket
+distance contacts, ligand, pocket, 4, 2
+color 4, contacts
+
+preset.ligand_cartoon('all')
+cmd.show('cartoon', 'all')
+
+cmd.delete('docked_pol_conts')
+cmd.show('cartoon', 'all')
+cmd.hide('lines')
+cmd.bg_color('black')
+cmd.set('cartoon_fancy_helices', 1)
+cmd.show('sticks', 'pocket &amp; (!(n;c,o,h|(n. n&amp;!r. pro)))')
+cmd.show('sticks', 'ligand')
+cmd.hide('lines', 'hydro')
+cmd.hide('sticks', 'hydro')
+
+cmd.center('ligand')
+
+cmd.center('ligand')
+
+ray 1000,1500
+png {}  # save the image to this file
+quit
+</code></pre>
+<p>This produces image like the one below.</p>
+<p><img class="img-zoomable" src="/posts/images/Shc1-PTB_1OY2_0061_NPEYp_0002.png" alt="" />
+</p>
+<p>I then used the <code>pillow</code> library along with the <code>score.sc</code> file produced by
+Rosetta which has metrics on the docking quality to create a (huge) gif of all these
+images.</p>
+<p><img class="img-zoomable" src="/posts/images/RosettaMovie.gif" alt="" />
+</p>
+<p>For some reason I was having an issue where if I changed the font of the text
+to anything other than the default font, when converted to a <code>gif</code> the text
+would not render. If anyone has had a similar problem please reach out.</p>
+<h2 id="visualizing-the-ensemble-using-plotly-and-r">Visualizing the ensemble using <code>plotly</code> and <code>R</code></h2>
+<p>The second approach I used was to extract the coordinates of the protein and
+all ligand conformations from the <code>pdb</code> files and plot them in three dimensions
+using <code>plotly</code>. This produces a &ldquo;cloud&rdquo; of ligand conformations and is
+a more easily accessible sanity check to make sure Rosetta was docking in
+generally reasonable locations based on the input parameters.</p>
+<iframe width="100%" height="600" frameBorder="0" name="iframe" scrolling="no" src="/plotly/myPlot.html"></iframe>
+<p>The atoms are labeled with their identity (either protein or ligand) and their
+coordinates. They are colored by the Rosetta <code>total_score</code> parameter for the
+complex. Therefore if the complex scored -120, all atoms of the ligand in that
+complex will have the color corresponding to the -120 value.</p>
+<p>You can pan, zoom, and rotate the plot using the controls in the upper right.
+Something that I am still working on is coloring the protein points separately
+from ligand points so they do not need to be on the color scale.</p>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Posts</a>
+            </li>
+            
+            <li>
+                <a href="/cv/holleman_cv.pdf">Download CV</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/ethanholleman" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/blogs/">blogs</a>
+            </span>
+            
+            <span>
+                <a href="/tags/christmas-card/">christmas card</a>
+            </span>
+            
+            <span>
+                <a href="/tags/crystallography/">crystallography</a>
+            </span>
+            
+            <span>
+                <a href="/tags/data-wrangling/">data wrangling</a>
+            </span>
+            
+            <span>
+                <a href="/tags/day-trips/">day trips</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fishing/">fishing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/guides/">guides</a>
+            </span>
+            
+            <span>
+                <a href="/tags/poker/">poker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/pymol/">PyMOL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/r/">R</a>
+            </span>
+            
+            <span>
+                <a href="/tags/research/">research</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Posts</a>
+            </li>
+            
+            <li>
+                <a href="/cv/holleman_cv.pdf">Download CV</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/ethanholleman" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/blogs/">blogs</a>
+            </span>
+            
+            <span>
+                <a href="/tags/christmas-card/">christmas card</a>
+            </span>
+            
+            <span>
+                <a href="/tags/crystallography/">crystallography</a>
+            </span>
+            
+            <span>
+                <a href="/tags/data-wrangling/">data wrangling</a>
+            </span>
+            
+            <span>
+                <a href="/tags/day-trips/">day trips</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fishing/">fishing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/guides/">guides</a>
+            </span>
+            
+            <span>
+                <a href="/tags/poker/">poker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/pymol/">PyMOL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/r/">R</a>
+            </span>
+            
+            <span>
+                <a href="/tags/research/">research</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <p>
+                Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
+            </p>
+            
+            <span>&copy; 2020-2021
+                <a href="https://ethanholleman.com">Ethan Holleman</a>
+                 | <a href="https://github.com/EthanHolleman/ethanholleman.github.io">Source code</a>  | <a href="https://ethanholleman.com/privacy">Privacy policy</a>
+                
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/medium-zoom@1.0.6,npm/lazysizes@5.2.2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>
