@@ -186,14 +186,16 @@ all ligand conformations from the <code>pdb</code> files and plot them in three 
 using <code>plotly</code>. This produces a &ldquo;cloud&rdquo; of ligand conformations and is
 a more easily accessible sanity check to make sure Rosetta was docking in
 generally reasonable locations based on the input parameters.</p>
-<iframe width="100%" height="600" frameBorder="0" name="iframe" scrolling="no" src="/plotly/myPlot.html"></iframe>
 <p>The atoms are labeled with their identity (either protein or ligand) and their
 coordinates. They are colored by the Rosetta <code>total_score</code> parameter for the
 complex. Therefore if the complex scored -120, all atoms of the ligand in that
 complex will have the color corresponding to the -120 value.</p>
 <p>You can pan, zoom, and rotate the plot using the controls in the upper right.
-Something that I am still working on is coloring the protein points separately
-from ligand points so they do not need to be on the color scale.</p>
+The top 100 ligand conformations by total score are shown below.</p>
+<iframe width="100%" height="600" frameBorder="0" name="iframe" scrolling="no" src="/plotly/200_alignments_NPEYp_docking_total_score.html"></iframe>
+<p>And the top 100 ligand conformations by interface delta X (difference in
+stability between bound and unbound states) are below this text.</p>
+<iframe width="100%" height="600" frameBorder="0" name="iframe" scrolling="no" src="/plotly/200_alignments_NPEYp_docking_interface_delta_x.html"></iframe>
 
     </div>
 </article>
