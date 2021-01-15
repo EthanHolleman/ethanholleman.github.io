@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.78.2" />
+
+
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
+
+
+<title>Tonkotsu Recipe - Ethan Holleman</title>
+
+
+<meta name="author" content="Ethan Holleman" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="cooking" />
+
+<meta property="og:title" content="Tonkotsu Recipe" />
+<meta property="og:description" content="This recipe (aside from the electronics) is derived from Joshua Weissman&rsquo;s video, How to Make Real Tonkotsu Ramen.
+Ingredients Below are all materials you will need to prepare the soup.
+Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics https://www." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ethanholleman.com/posts/tonkatsu/" />
+<meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
+<meta property="article:published_time" content="2021-01-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-14T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
+
+<meta name="twitter:title" content="Tonkotsu Recipe"/>
+<meta name="twitter:description" content="This recipe (aside from the electronics) is derived from Joshua Weissman&rsquo;s video, How to Make Real Tonkotsu Ramen.
+Ingredients Below are all materials you will need to prepare the soup.
+Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics https://www."/>
+
+
+
+
+
+<link rel="stylesheet" href="https://ethanholleman.com/assets/css/fuji.min.css" />
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-84NGXGRHE8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-84NGXGRHE8');
+</script>
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://ethanholleman.com">Ethan Holleman</a>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://ethanholleman.com/posts/tonkatsu/">Tonkotsu Recipe</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-01-14</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/cooking">cooking</a>&nbsp;</span>
+
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>This recipe (aside from the electronics) is derived from Joshua Weissman&rsquo;s
+video, <a href="https://www.youtube.com/watch?v=uPqzY8rZLZM&amp;t=312s" target="_blank">How to Make Real Tonkotsu Ramen</a>.</p>
+<h1 id="ingredients">Ingredients</h1>
+<p>Below are all materials you will need to prepare the soup.</p>
+<h2 id="broth--soup">Broth / soup</h2>
+<table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Quantity</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pig trotters</td>
+<td>3</td>
+<td>lbs</td>
+</tr>
+<tr>
+<td>Green onion</td>
+<td>1</td>
+<td>bunch</td>
+</tr>
+<tr>
+<td>Yellow onion</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Shallot</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>Knob ginger</td>
+<td>2</td>
+<td>inches</td>
+</tr>
+<tr>
+<td>Ramen noodles</td>
+<td>1</td>
+<td>package</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chashu-braised-pork-belly">Chashu (Braised pork belly)</h2>
+<table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Quantity</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pork belly</td>
+<td>2</td>
+<td>lbs</td>
+</tr>
+<tr>
+<td>Soy sauce</td>
+<td>1/2</td>
+<td>cup</td>
+</tr>
+<tr>
+<td>Mirin</td>
+<td>3/4</td>
+<td>cup</td>
+</tr>
+<tr>
+<td>Sake</td>
+<td>1</td>
+<td>cup</td>
+</tr>
+<tr>
+<td>Ginger knob</td>
+<td>2</td>
+<td>inches</td>
+</tr>
+<tr>
+<td>Green onion</td>
+<td>1</td>
+<td>bunch</td>
+</tr>
+<tr>
+<td>Glove garlic</td>
+<td>5</td>
+<td>cloves</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tare">Tare</h2>
+<table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Quantity</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bonito flakes</td>
+<td>1/2</td>
+<td>cup</td>
+</tr>
+<tr>
+<td>Kombu</td>
+<td>3</td>
+<td>pieces</td>
+</tr>
+<tr>
+<td>Soy sauce</td>
+<td>3/4</td>
+<td>cup</td>
+</tr>
+<tr>
+<td>Dried shiitake mushrooms</td>
+<td>1/4</td>
+<td>cup</td>
+</tr>
+<tr>
+<td>Chashu braising liquid</td>
+<td>1/4</td>
+<td>cup</td>
+</tr>
+</tbody>
+</table>
+<h2 id="electronics-optional">Electronics (Optional)</h2>
+<table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi</td>
+<td>1</td>
+</tr>
+<tr>
+<td>DS18B20 Temperature Sensor Module Kit</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h1 id="protocol">Protocol</h1>
+<h2 id="prepare-electronics">Prepare electronics</h2>
+<p><a href="https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/">https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/</a></p>
+<pre><code>sudo nano /boot/config.txt
+dtoverlay=w1-gpio
+sudo reboot
+sudo modprobe w1-gpio
+sudo modprobe w1-therm
+cd /sys/bus/w1/devices
+ls  # assuming connected
+cat w1_slave  # raw temp reading
+</code></pre>
+<p>reading the temperature</p>
+<pre><code>import os
+import glob
+import time
+ 
+os.system('modprobe w1-gpio')
+os.system('modprobe w1-therm')
+ 
+base_dir = '/sys/bus/w1/devices/'
+device_folder = glob.glob(base_dir + '28*')[0]
+device_file = device_folder + '/w1_slave'
+ 
+def read_temp_raw():
+    f = open(device_file, 'r')
+    lines = f.readlines()
+    f.close()
+    return lines
+ 
+def read_temp():
+    lines = read_temp_raw()
+    while lines[0].strip()[-3:] != 'YES':
+        time.sleep(0.2)
+        lines = read_temp_raw()
+    equals_pos = lines[1].find('t=')
+    if equals_pos != -1:
+        temp_string = lines[1][equals_pos+2:]
+        temp_c = float(temp_string) / 1000.0
+        temp_f = temp_c * 9.0 / 5.0 + 32.0
+        return temp_c, temp_f
+	
+while True:
+	print(read_temp())	
+	time.sleep(1)
+</code></pre>
+<h2 id="add-electronics">Add electronics</h2>
+<p>Since it is critical the low boil is maintained it is widely accepted that
+you should electronically monitor the temperature and water level of your
+broth.</p>
+<h2 id="prepare-broth">Prepare broth</h2>
+<ol>
+<li>Add <code>3lbs trotters</code> to large pot. Cover with 2 inches of water and bring to a
+rolling boil for 10 minutes. Remove any residue that floats to the top with a
+spoon or mesh strainer.</li>
+<li>Empty <code>3lbs trotters</code> and water into a strainer and rinse to clean.</li>
+<li>Place trotters back into the large pot and cover with 3 inches of water.</li>
+<li>Cut <code>1 bunch green onion</code> into fourths and add to large pot.</li>
+<li>Cut <code>2 shallots</code> into fourths, leaving skins on, and add to pot.</li>
+<li>Cut <code>1 yellow onion</code> into fourths and add to the pot.</li>
+<li>Peel <code>2 2 inch knobs ginger</code>, slice and add to pot.</li>
+<li>Peel <code>5 cloves garlic</code> and add to pot.</li>
+<li>Bring water in large part to a rolling boil. Minimize temperature while
+still maintaining a low boil. This will be maintained for <strong>12 hours</strong>.
+Stir pot around once an hour. Additionally, add water to restore original
+level whenever half of the water had been lost.</li>
+</ol>
+<h2 id="prepare-chashu">Prepare chashu</h2>
+<ol>
+<li>Cut <code>1 bunch</code> green onion into 2 inch sections.</li>
+<li>Peel <code>2 inch knob ginger</code> and slice.</li>
+<li>Add <code>1 cup sake</code>, the green onion, the ginger, <code>3/4 cup mirin</code>, <code>1/2 cup + 2 Tablespoons soy sauce</code>,
+four cloves of whole garlic, and <code>1/3</code> cup water to a large oven-safe pot.</li>
+<li>Roll the pork belly length wise and tie with kitchen twine into three
+separate segments. Place into the pot with other ingredients.</li>
+<li>Bring chashu to a boil, then low boil and then cover with a lid and place
+into a 300 degree oven for 3-3.5 hours. Baste every 30 mins.</li>
+</ol>
+<h2 id="prepare-the-tare">Prepare the tare</h2>
+<ol>
+<li>Add <code>three 2 inch peices of kombu</code> to a small pot.</li>
+<li>Add <code>3/4 cup water</code> to the pot.</li>
+<li>Boil the water and then let kombu seep for 10 minutes.</li>
+<li>Add <code>1/2 cup bonito flakes</code> to pot and let steep for 5 minutes.</li>
+<li>After the 5 minutes poor solution through a fine mesh sieve into a medium bowl.</li>
+<li>Add <code>3/4 cup soy sauce</code>, <code>1/4 cup + 2 tablespoons mirin</code>, <code>1/4 cup chashu braising liquid</code>
+and <code>1/4 cup rehydrating liquid</code> used for mushrooms to medium bowl. Stir and
+lightly salt.</li>
+</ol>
+<h2 id="prepare-toppings">Prepare toppings</h2>
+<p>This should be done within a half-hour of time to serve.</p>
+<ol>
+<li>Finely chop the green part of a green onion.</li>
+<li>Dehydrate shiitake mushrooms according to package directions.</li>
+<li>Prepare ice water bath.</li>
+<li>Bring small pot of water to boil. Add eggs and reduce heat to gentile bowl.
+Boil eggs for 6-7 minutes then place into ice bath.</li>
+</ol>
+<h2 id="assembling-the-soup">Assembling the soup</h2>
+<ol>
+<li>Boil ramen noodles according to package directions.</li>
+<li>Slice chashu into into 1/2 inch slices. If cold reheat in pan.</li>
+<li>Add tare to bowl to taste.</li>
+<li>Strain broth and add to bowl.</li>
+<li>Add soft boiled eggs, chashu, mushrooms and sliced green onion to broth.</li>
+</ol>
+<p>Done!</p>
+<h1 id="enjoy">Enjoy</h1>
+<h1 id="plot-temperature-data-with-r">Plot temperature data with R</h1>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Posts</a>
+            </li>
+            
+            <li>
+                <a href="/cv/holleman_cv.pdf">Download CV</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/ethanholleman" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/blogs/">blogs</a>
+            </span>
+            
+            <span>
+                <a href="/tags/christmas-card/">christmas card</a>
+            </span>
+            
+            <span>
+                <a href="/tags/cooking/">cooking</a>
+            </span>
+            
+            <span>
+                <a href="/tags/crystallography/">crystallography</a>
+            </span>
+            
+            <span>
+                <a href="/tags/data-wrangling/">data wrangling</a>
+            </span>
+            
+            <span>
+                <a href="/tags/day-trips/">day trips</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fishing/">fishing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/guides/">guides</a>
+            </span>
+            
+            <span>
+                <a href="/tags/poker/">poker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/pymol/">PyMOL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/r/">R</a>
+            </span>
+            
+            <span>
+                <a href="/tags/research/">research</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">Posts</a>
+            </li>
+            
+            <li>
+                <a href="/cv/holleman_cv.pdf">Download CV</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/ethanholleman" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/blogs/">blogs</a>
+            </span>
+            
+            <span>
+                <a href="/tags/christmas-card/">christmas card</a>
+            </span>
+            
+            <span>
+                <a href="/tags/cooking/">cooking</a>
+            </span>
+            
+            <span>
+                <a href="/tags/crystallography/">crystallography</a>
+            </span>
+            
+            <span>
+                <a href="/tags/data-wrangling/">data wrangling</a>
+            </span>
+            
+            <span>
+                <a href="/tags/day-trips/">day trips</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fishing/">fishing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/guides/">guides</a>
+            </span>
+            
+            <span>
+                <a href="/tags/poker/">poker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/pymol/">PyMOL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/r/">R</a>
+            </span>
+            
+            <span>
+                <a href="/tags/research/">research</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <p>
+                Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
+            </p>
+            
+            <span>&copy; 2020-2021
+                <a href="https://ethanholleman.com">Ethan Holleman</a>
+                 | <a href="https://github.com/EthanHolleman/ethanholleman.github.io">Source code</a>  | <a href="https://ethanholleman.com/privacy">Privacy policy</a>
+                
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/medium-zoom@1.0.6,npm/lazysizes@5.2.2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>
