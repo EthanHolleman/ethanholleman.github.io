@@ -6,7 +6,18 @@
     <description>Recent content in blogs on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tonkotsu Recipe</title>
+      <link>https://ethanholleman.com/posts/tonkatsu/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/tonkatsu/</guid>
+      <description>This recipe (aside from the electronics) is derived from Joshua Weissman&amp;rsquo;s video, How to Make Real Tonkotsu Ramen.
+Ingredients Below are all materials you will need to prepare the soup.
+Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&amp;rsquo;t have data from that.</description>
+    </item>
+    
     <item>
       <title>Visualizing ligand docking results with PyMOL scripting and R</title>
       <link>https://ethanholleman.com/posts/ligand_plotting/</link>

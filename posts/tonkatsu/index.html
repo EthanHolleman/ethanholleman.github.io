@@ -24,12 +24,12 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta name="keywords" content="cooking" />
+<meta name="keywords" content="cooking, blogs" />
 
 <meta property="og:title" content="Tonkotsu Recipe" />
 <meta property="og:description" content="This recipe (aside from the electronics) is derived from Joshua Weissman&rsquo;s video, How to Make Real Tonkotsu Ramen.
 Ingredients Below are all materials you will need to prepare the soup.
-Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics https://www." />
+Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&rsquo;t have data from that." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ethanholleman.com/posts/tonkatsu/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
@@ -42,7 +42,7 @@ Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1
 <meta name="twitter:title" content="Tonkotsu Recipe"/>
 <meta name="twitter:description" content="This recipe (aside from the electronics) is derived from Joshua Weissman&rsquo;s video, How to Make Real Tonkotsu Ramen.
 Ingredients Below are all materials you will need to prepare the soup.
-Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics https://www."/>
+Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&rsquo;t have data from that."/>
 
 
 
@@ -103,7 +103,7 @@ Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1
         <a href="https://ethanholleman.com/posts/tonkatsu/">Tonkotsu Recipe</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-01-14</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/cooking">cooking</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-01-14</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/cooking">cooking</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
 
     </div>
     
@@ -260,54 +260,20 @@ video, <a href="https://www.youtube.com/watch?v=uPqzY8rZLZM&amp;t=312s" target="
 </table>
 <h1 id="protocol">Protocol</h1>
 <h2 id="prepare-electronics">Prepare electronics</h2>
-<p><a href="https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/">https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/</a></p>
-<pre><code>sudo nano /boot/config.txt
-dtoverlay=w1-gpio
-sudo reboot
-sudo modprobe w1-gpio
-sudo modprobe w1-therm
-cd /sys/bus/w1/devices
-ls  # assuming connected
-cat w1_slave  # raw temp reading
-</code></pre>
-<p>reading the temperature</p>
-<pre><code>import os
-import glob
-import time
- 
-os.system('modprobe w1-gpio')
-os.system('modprobe w1-therm')
- 
-base_dir = '/sys/bus/w1/devices/'
-device_folder = glob.glob(base_dir + '28*')[0]
-device_file = device_folder + '/w1_slave'
- 
-def read_temp_raw():
-    f = open(device_file, 'r')
-    lines = f.readlines()
-    f.close()
-    return lines
- 
-def read_temp():
-    lines = read_temp_raw()
-    while lines[0].strip()[-3:] != 'YES':
-        time.sleep(0.2)
-        lines = read_temp_raw()
-    equals_pos = lines[1].find('t=')
-    if equals_pos != -1:
-        temp_string = lines[1][equals_pos+2:]
-        temp_c = float(temp_string) / 1000.0
-        temp_f = temp_c * 9.0 / 5.0 + 32.0
-        return temp_c, temp_f
-	
-while True:
-	print(read_temp())	
-	time.sleep(1)
-</code></pre>
-<h2 id="add-electronics">Add electronics</h2>
-<p>Since it is critical the low boil is maintained it is widely accepted that
-you should electronically monitor the temperature and water level of your
-broth.</p>
+<p>So I was planning on monitoring the soup using the DS18B20 temperature sensor
+but it did not arrive in time so unfortunately I don&rsquo;t have data from that.
+I also thought it might be cool to monitor if the water level drops below a
+certain level by taking advantage of the conductivity of the soup by placing
+two separated wires into the soup at the minimum desired level. If a current
+can be measured between them (broth is acting as the switch) you don&rsquo;t need
+to replace the water. I had a difficult time positioning the wires consistently
+given the boiling liquid and required occasional mixing.</p>
+<p>I believe this is is very possible but will require some more specific hardware
+and / or modification to the pot itself. Anyway, if full control over your
+soup is what you desire you can download <a href="https://github.com/EthanHolleman/soup_monitor" target="_blank">the code I wrote in anticipation of
+doing this at this link</a>.</p>
+<p>Once everything is set up, it should text / email you if soup temperature or
+broth level gets too low.</p>
 <h2 id="prepare-broth">Prepare broth</h2>
 <ol>
 <li>Add <code>3lbs trotters</code> to large pot. Cover with 2 inches of water and bring to a
@@ -366,7 +332,16 @@ Boil eggs for 6-7 minutes then place into ice bath.</li>
 </ol>
 <p>Done!</p>
 <h1 id="enjoy">Enjoy</h1>
-<h1 id="plot-temperature-data-with-r">Plot temperature data with R</h1>
+<p>Here are a few pictures of my results.</p>
+<p><img class="img-zoomable" src="/posts/images/IMG_4156.HEIC.png" alt="" />
+</p>
+<p><em>Chashu just out of the oven</em></p>
+<p><img class="img-zoomable" src="/posts/images/IMG_4157.HEIC.png" alt="" />
+</p>
+<p><em>Closeup glam shot of that molten egg and soup</em></p>
+<p><img class="img-zoomable" src="/posts/images/IMG_4159.HEIC.png" alt="" />
+</p>
+<p><em>Abusing portrait mode</em></p>
 
     </div>
 </article>
