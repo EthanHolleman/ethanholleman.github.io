@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>National Bridge Inventory on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/national-bridge-inventory/</link>
+    <description>Recent content in National Bridge Inventory on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/national-bridge-inventory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Potential NBI encoding error</title>
+      <link>https://ethanholleman.com/posts/nbi_encoding/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/nbi_encoding/</guid>
+      <description>NBI Background The National Bridge Inventory (NBI) is a program of the Federal Highway Administration which is an agency within the U.S Department of Transportation. The NBI makes available records and statistics about all the bridges in the United States which includes information about bridge location, integrity, inspection history and usage.
+Potential encoding discrepancy As a side project I have been working on creating a more exhaustive Python package for parsing NBI data. This is mainly focused on decoding the numerical representations present in data files to their semantic meanings specified in the NBI documentation.
+I ran into errors when trying to decode the state code fields, which based on the available documentation uses the coding table below.</description>
+    </item>
+    
+  </channel>
+</rss>
