@@ -166,11 +166,24 @@ they will not work for undelimited files.</p>
 an undocumented change in encoding schemes when files where made available
 in csv format, or a bug in the code used to do the conversion.</p>
 <h2 id="who-cares-is-this-a-problem">Who cares? Is this a problem?</h2>
-<p>This data is used by researchers and regulators to understand the state of
-America&rsquo;s infrastructure. This is likely just a case of a lack of documentation
-but could indicate a larger bug that is effecting the translation of other
-important fields in the delimitated files which are much more likely to be
-used as the barriers to entry are much lower than the non-delim version.</p>
+<p>This is in all likelihood not a big deal, but I am a nerd and spent an hour or
+two looking into it. This is likely just a case of a lack of documentation
+of small change in encoding practices. However, this data is used by researchers
+and regulators to understand the state of America&rsquo;s infrastructure and therefore
+it is important it representation should be as accurate and true to reality as
+possible so I think it iw worth thinking about.</p>
+<h2 id="update">Update</h2>
+<p>I got a very timely response from Samantha Lubkin at the FHWA
+relating to the state encodings.</p>
+<pre><code>The State Code as defined in the NBI Coding Guide includes a 3rd digit that is currently obsolete.  
+That digit is omitted from the delimited file, and can be ignored in the 
+nondelimited file.  Aside from that 3rd digit, the codes are identical between 
+the SNBIBE and the NBI Coding Guide.  (And both are based on FIPS.)  Whether 
+this kind of logic exists for other fields, I can’t say.  
+But yes, the NBI Coding Guide is the appropriate reference for 
+both delimited and nondelimited NBI files.
+</code></pre>
+<p>Looks like it was a one-ff thing with just state codes. Thanks again Samantha!</p>
 
     </div>
 </article>
@@ -232,6 +245,10 @@ used as the barriers to entry are much lower than the non-delim version.</p>
             </span>
             
             <span>
+                <a href="/tags/cancer/">cancer</a>
+            </span>
+            
+            <span>
                 <a href="/tags/christmas-card/">christmas card</a>
             </span>
             
@@ -257,6 +274,10 @@ used as the barriers to entry are much lower than the non-delim version.</p>
             
             <span>
                 <a href="/tags/guides/">guides</a>
+            </span>
+            
+            <span>
+                <a href="/tags/medical-testing/">medical testing</a>
             </span>
             
             <span>
@@ -360,6 +381,10 @@ used as the barriers to entry are much lower than the non-delim version.</p>
             </span>
             
             <span>
+                <a href="/tags/cancer/">cancer</a>
+            </span>
+            
+            <span>
                 <a href="/tags/christmas-card/">christmas card</a>
             </span>
             
@@ -385,6 +410,10 @@ used as the barriers to entry are much lower than the non-delim version.</p>
             
             <span>
                 <a href="/tags/guides/">guides</a>
+            </span>
+            
+            <span>
+                <a href="/tags/medical-testing/">medical testing</a>
             </span>
             
             <span>
@@ -450,6 +479,15 @@ used as the barriers to entry are much lower than the non-delim version.</p>
 
 
 <script defer src="/assets/js/fuji.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"
+></script>
+
 
 
 </body>

@@ -8,6 +8,16 @@
     <language>en</language>
     <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>PanSeer cancer blood test: Thinking about interpreting medical test accuracy</title>
+      <link>https://ethanholleman.com/posts/panseer_test/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/panseer_test/</guid>
+      <description>Background I recently saw the an article titled Non-invasive early detection of cancer four years before conventional diagnosis using a blood test . This is obviously an impressive claim and so I skimmed through. The methods of the test are very interesting; the authors measured methylation of DNA in blood plasma and then used logistic regression to classify reads as cancerous or not cancerous in origin based on DNA-methylation patterns extracted from the cancer genome atlas.
+The paper claims to detect 88% of 5 common cancer types in post-diagnosis patients with a specificity of 96%. Another way of saying the same thing is that their test has a false-negative rate of 12% and a false-positive rate of 4%.</description>
+    </item>
+    
+    <item>
       <title>Potential NBI encoding error</title>
       <link>https://ethanholleman.com/posts/nbi_encoding/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>

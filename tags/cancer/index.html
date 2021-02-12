@@ -15,7 +15,7 @@
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
 
 
-<title>Plotting COVID-19 Hospitalization Geo-Spacial Data - Ethan Holleman</title>
+<title>cancer - Ethan Holleman</title>
 
 
 <meta name="author" content="Ethan Holleman" />
@@ -24,27 +24,18 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta name="keywords" content="programming, R, blogs" />
-
-<meta property="og:title" content="Plotting COVID-19 Hospitalization Geo-Spacial Data" />
-<meta property="og:description" content="After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
-User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
-There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
-The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.com/posts/covid_data/" />
+<meta property="og:title" content="cancer" />
+<meta property="og:description" content="A minimal Hugo theme with nice theme color." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ethanholleman.com/tags/cancer/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
-<meta property="article:published_time" content="2020-12-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-24T00:00:00+00:00" />
+<meta property="og:updated_time" content="2021-02-11T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
 
-<meta name="twitter:title" content="Plotting COVID-19 Hospitalization Geo-Spacial Data"/>
-<meta name="twitter:description" content="After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
-User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
-There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
-The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A."/>
+<meta name="twitter:title" content="cancer"/>
+<meta name="twitter:description" content="A minimal Hugo theme with nice theme color."/>
 
 
 
@@ -99,48 +90,32 @@ The dataset includes patients with and without hospitalization records and so fi
             
             <div class="col-12 col-md-9 float-left content">
                 
-<article>
-    
+
+<div class="page-info">
+    <span>Posts with the tag cancer: </span>
+</div>
+
+
+
+<div class="post">
     <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/covid_data/">Plotting COVID-19 Hospitalization Geo-Spacial Data</a>
+        <a href="https://ethanholleman.com/posts/panseer_test/">PanSeer cancer blood test: Thinking about interpreting medical test accuracy</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-24</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-02-11</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/medical-testing">medical testing</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/cancer">cancer</a>&nbsp;</span>
 
     </div>
-    
-    
-    <div class="post-content markdown-body">
-        <p>After finding the COG-UK data I was looking around for other interesting
-COVID-19 datasets to play around with and build my R plotting skills with.</p>
-<p>User <code>moritz.kraemer</code> posted
-<a href="https://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337" target="_blank">this article</a>
-on early case descriptions
-which included a lot of geo-spacial data that I was interested in takeing a
-look at.</p>
-<p>There was a significant number of fields devoted to hospitalization related
-measurements and so I focused on that subject for the plot below.</p>
-<p><img class="img-zoomable" src="/posts/images/all_plots.jpg" alt="" />
-</p>
-<p>The dataset includes patients with and without hospitalization records and so
-first I filtered down to just those with records and those who also had
-location data. This subset of patients formed subplot A. Clearly this is not
-an exhaustive dataset and seems to focus on hospitalizations for China, France,
-and Argentina.</p>
-<p>Subplot B shows hospitalizations by date, which for this dataset, really pick
-up in April. However, this is not super informative due to ~90 % of the data
-being localized to three countries.</p>
-<p>Finally, subplot C includes two boxplots. The first shows the difference in days
-between a patient experiencing symptoms and admission to a hospital. A negative
-value indicates days before admission. So a patient with a value of -10 would
-mean the patient experienced symptoms 10 days before being admitted. The second
-boxplot shows the length of stay once admitted. It should be noted that this
-dataset lumps deaths and discharges into the same category <code>date_death_or_discharge</code>.
-The mean stay once admitted was ~10 days.</p>
-<p>The R code to generate these plots can be <a href="/posts/code/covid_hos.r">viewed here</a></p>
-
+    <div class="post-item post-summary markdown-body">
+        Background I recently saw the an article titled Non-invasive early detection of cancer four years before conventional diagnosis using a blood test . This is obviously an impressive claim and so I skimmed through. The methods of the test are very interesting; the authors measured methylation of DNA in blood plasma and then used logistic regression to classify reads as cancerous or not cancerous in origin based on DNA-methylation patterns extracted from the cancer genome atlas.
+The paper claims to detect 88% of 5 common cancer types in post-diagnosis patients with a specificity of 96%. Another way of saying the same thing is that their test has a false-negative rate of 12% and a false-positive rate of 4%.
     </div>
-</article>
+</div>
+
+
+
+
+
+
 
 
 
@@ -400,8 +375,6 @@ The mean stay once admitted was ~10 days.</p>
             
         </div>
     </div>
-    
-    
     
     
   </div>
