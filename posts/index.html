@@ -29,7 +29,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ethanholleman.com/posts/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
-<meta property="og:updated_time" content="2021-02-11T00:00:00+00:00" />
+<meta property="og:updated_time" content="2021-02-13T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
@@ -95,6 +95,20 @@
 
 
 
+
+<div class="post">
+    <h2 class="post-item post-title">
+        <a href="https://ethanholleman.com/posts/recursive_citations/">What would recursive academic citations look like?</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-02-13</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
+
+    </div>
+    <div class="post-item post-summary markdown-body">
+        The way academic citations are measured currently is pretty standardized. Authors of article A accrue a citation whenever their article is directly cited in article B. But there is likely a large amount of work that was cited by article A but not by article B. The authors of this work which indirectly contributed to article B by contributing to article A (which B cites) will not see a citation.
+What if instead citing one article triggered a recursive call all the way down the network formed by articles and their citations? Would this end up eventually citing almost all articles in a field?
+    </div>
+</div>
 
 <div class="post">
     <h2 class="post-item post-title">
@@ -239,23 +253,6 @@ For an upcoming Zoom party I created a python command line application that take
 User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
 There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
 The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/cog_sars/">Plotting COG-UK Data</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-21</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        The Covid-19 Genomics UK Consortium has been collecting and sequencing thousands of COVID-19 genomes from patients in the UK and around the world.
-All of their data is publicly available. Here I played around with the phylogenetic tree they have created from global alignments of all the genomes they have sequenced.
-You can download the tree in Newick format from their data page which also hosts sequences and the alignment files.
-Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by country Note this plot is log scale in the y-axis.
-16 most prevalent UK COVID-19 lineages Density plots showing the number of genomes of the 16 most prevalent lineages detected by COG-UK.
     </div>
 </div>
 

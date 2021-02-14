@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What would recursive academic citations look like?</title>
+      <link>https://ethanholleman.com/posts/recursive_citations/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/recursive_citations/</guid>
+      <description>The way academic citations are measured currently is pretty standardized. Authors of article A accrue a citation whenever their article is directly cited in article B. But there is likely a large amount of work that was cited by article A but not by article B. The authors of this work which indirectly contributed to article B by contributing to article A (which B cites) will not see a citation.
+What if instead citing one article triggered a recursive call all the way down the network formed by articles and their citations? Would this end up eventually citing almost all articles in a field?</description>
+    </item>
+    
     <item>
       <title>PanSeer cancer blood test: Thinking about interpreting medical test accuracy</title>
       <link>https://ethanholleman.com/posts/panseer_test/</link>
