@@ -6,7 +6,18 @@
     <description>Recent content in R on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scraping and visualizing leafly.com cannabis strain data</title>
+      <link>https://ethanholleman.com/posts/leafly_data/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/leafly_data/</guid>
+      <description>Recently I was asked by a friend if they knew about any databases that classified cannabis strains by symptoms people tend to use them to relieve. I didn&amp;rsquo;t know of the existence of any but had heard about leafly.com which catalogues user reviews of various cannabis strains and compiles data on their characteristics.
+I thought this could be a good place for them to start and so I started looking into what it would take to make a webscrapper to pull down all the data leafly has complied on hundreds on cannabis strains.
+It turns out it didn&amp;rsquo;t take that much.</description>
+    </item>
+    
     <item>
       <title>What would recursive academic citations look like?</title>
       <link>https://ethanholleman.com/posts/recursive_citations/</link>

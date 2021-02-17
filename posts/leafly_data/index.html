@@ -15,7 +15,7 @@
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
 
 
-<title>blogs - Ethan Holleman</title>
+<title>Scraping and visualizing leafly.com cannabis strain data - Ethan Holleman</title>
 
 
 <meta name="author" content="Ethan Holleman" />
@@ -24,18 +24,25 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta property="og:title" content="blogs" />
-<meta property="og:description" content="A minimal Hugo theme with nice theme color." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ethanholleman.com/tags/blogs/" />
+<meta name="keywords" content="programming, blogs, Python, R" />
+
+<meta property="og:title" content="Scraping and visualizing leafly.com cannabis strain data" />
+<meta property="og:description" content="Recently I was asked by a friend if they knew about any databases that classified cannabis strains by symptoms people tend to use them to relieve. I didn&rsquo;t know of the existence of any but had heard about leafly.com which catalogues user reviews of various cannabis strains and compiles data on their characteristics.
+I thought this could be a good place for them to start and so I started looking into what it would take to make a webscrapper to pull down all the data leafly has complied on hundreds on cannabis strains.
+It turns out it didn&rsquo;t take that much." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ethanholleman.com/posts/leafly_data/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
-<meta property="og:updated_time" content="2021-02-16T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-02-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-16T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
 
-<meta name="twitter:title" content="blogs"/>
-<meta name="twitter:description" content="A minimal Hugo theme with nice theme color."/>
+<meta name="twitter:title" content="Scraping and visualizing leafly.com cannabis strain data"/>
+<meta name="twitter:description" content="Recently I was asked by a friend if they knew about any databases that classified cannabis strains by symptoms people tend to use them to relieve. I didn&rsquo;t know of the existence of any but had heard about leafly.com which catalogues user reviews of various cannabis strains and compiles data on their characteristics.
+I thought this could be a good place for them to start and so I started looking into what it would take to make a webscrapper to pull down all the data leafly has complied on hundreds on cannabis strains.
+It turns out it didn&rsquo;t take that much."/>
 
 
 
@@ -90,185 +97,135 @@
             
             <div class="col-12 col-md-9 float-left content">
                 
-
-<div class="page-info">
-    <span>Posts with the tag blogs: </span>
-</div>
-
-
-
-<div class="post">
+<article>
+    
     <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/covid_data/">Plotting COVID-19 Hospitalization Geo-Spacial Data</a>
+        <a href="https://ethanholleman.com/posts/leafly_data/">Scraping and visualizing leafly.com cannabis strain data</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-24</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-02-16</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;<a href="/tags/r">R</a>&nbsp;</span>
 
     </div>
-    <div class="post-item post-summary markdown-body">
-        After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
-User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
-There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
-The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A.
+    
+    
+    <div class="post-content markdown-body">
+        <p>Recently I was asked by a friend if they knew about any databases that classified
+cannabis strains by symptoms people tend to use them to relieve. I didn&rsquo;t
+know of the existence of any but had heard about <a href="https://www.leafly.com/" target="_blank">leafly.com</a>
+which catalogues user reviews of various cannabis strains and compiles data on
+their characteristics.</p>
+<p>I thought this could be a good place for them to start and so I started looking
+into what it would take to make a webscrapper to pull down all the data leafly
+has complied on hundreds on cannabis strains.</p>
+<p>It turns out it didn&rsquo;t take that much.</p>
+<p>First, you can browse strains by going to the strains url at <code>https://www.leafly.com/strains</code>.
+Conveniently, you can iterate through pages by just adding <code>?page=n</code> where
+<code>n</code> is whatever page you want.</p>
+<p>I started looking through the html of these pages originally to find a way to
+pull out urls that would lead to each individual strain&rsquo;s page but leafly
+(conveniently for me) provides basically all the information it has on the strains
+listed on a specific page in a nicely formatted json string in a script at the
+bottom of the page.</p>
+<p>I was using the <code>BeautifulSoup</code> package and so after getting the page content
+with <code>requests</code> all it took was</p>
+<pre><code class="language-python">json_script = str(soup.find_all('script', id='__NEXT_DATA__'))
+clean_json = re.sub('&lt;.*?&gt;', '', json_script)
+json.loads(clean_json).pop() 
+</code></pre>
+<p>to extract, clean and load the json into a dictionary. I did this for all pages
+and collected <a href="https://github.com/EthanHolleman/leafly_scraper/blob/main/json_data.tar.xz" target="_blank">167 json files</a>.</p>
+<p>I then threw together a <a href="https://github.com/EthanHolleman/leafly_scraper/blob/main/Python/extract_terps_from_json.py" target="_blank">quick python script</a>
+to pull out basic attributes about
+each strain from the json file collection including metrics on the terpene
+content of each strain and the feelings strains tend to create for users,
+collectively called &ldquo;effect measurements&rdquo;.
+These were both expressed as floats but I am not sure what the units could be
+for either if there are any.</p>
+<p>I wanted to see if I could use classify the phenotype of each strain (sativa,
+indicia or hybrid) based on the various terpene and / or effect measurements
+in a way that was at least better than a random guess.</p>
+<p>I choose to go with a random forest model using the <code>randomForest</code> library in
+R since there are three possible classifications. The variable importance
+plots generated from the <code>varImpPlot</code> function after training the models on their
+respective training sets is below.</p>
+<p><img class="img-zoomable" src="/posts/images/effect_terp.png" alt="" />
+</p>
+<p>I then tested each model&rsquo;s predictive ability by using the models to predict on
+the validation set and creating a confusion matrix for each model.</p>
+<p>Observed (validation data) are the rows and predictions are columns.</p>
+<p><strong>Terpene confusion matrix</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hybrid</th>
+<th>Indica</th>
+<th>Sativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid</td>
+<td>696</td>
+<td>32</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Indica</td>
+<td>218</td>
+<td>11</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sativa</td>
+<td>142</td>
+<td>0</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Using terpenes as the explanatory variables was worse then guessing and basically
+just thought everything was a hybrid.</p>
+<p><strong>Effect measurement confusion matrix</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hybrid</th>
+<th>Indica</th>
+<th>Sativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid</td>
+<td>826</td>
+<td>84</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Indica</td>
+<td>172</td>
+<td>210</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sativa</td>
+<td>161</td>
+<td>1</td>
+<td>92</td>
+</tr>
+</tbody>
+</table>
+<p>Neither model did great, and there seems to be a preference for hybrids. This
+may be because hybrids were the most prevalent phenotype in the leafly database.
+Either way, fun little exercise that traversed web-scrapping, Python and R.</p>
+<p>If you would like to play around with the processed data (csv) you can download
+it <a href="https://github.com/EthanHolleman/leafly_scraper/blob/main/strains.tar.xz" target="_blank">at this link</a>.</p>
+
     </div>
-</div>
+</article>
 
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/cog_sars/">Plotting COG-UK Data</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-21</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        The Covid-19 Genomics UK Consortium has been collecting and sequencing thousands of COVID-19 genomes from patients in the UK and around the world.
-All of their data is publicly available. Here I played around with the phylogenetic tree they have created from global alignments of all the genomes they have sequenced.
-You can download the tree in Newick format from their data page which also hosts sequences and the alignment files.
-Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by country Note this plot is log scale in the y-axis.
-16 most prevalent UK COVID-19 lineages Density plots showing the number of genomes of the 16 most prevalent lineages detected by COG-UK.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/christmas_card/">2020 Christmas Card Bonus Pictures</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-20</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/christmas-card">christmas card</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        Apartment Tour Taken right after move in.
-Skys during the wildfires Those are not clouds.
-Davis campus cows Around Davis Hiking in Winters, CA
-Fishing at Putah Creek
-Thanksgiving Bubbles Lots cat pictures have been taken
-California changes a man 
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/running_winnings/">Poker Nights Running Results</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-18</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/poker">poker</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        Y axis of all plots are unit-less.
-Running stack sizes Shows each players cumulative stack over all nights played.
- Winnings by date Plot of each players winnings (stack at the end of the round - buy in) over time.
- All games have been played virtually, for info on how we host these see this post.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/zoom_poker/">Casual virtual Poker with Zoom and PlayingCards.io</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-15</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/poker">poker</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        Update I recently found a number of .io type websites devoted specifically to poker (not sure why didn&rsquo;t think to search poker .io earlier) which get around the main issues of playing using playingcards.io.
-I would highly, highly recommend using lipoker.io. It handles betting with shortcuts for bets based on pot or blind sizes, handles turns automatically and does not require a sign up.
-For Poker, lipoker is supporior in every way to PlayingCards.io due to being designed for this specific game. If for some reason you would still like to use PlayingCards.io continue reading, otherwise stop and use lipoker.io.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/vietnam_data/">Data and the Vietnam War</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-12</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/data-wrangling">data wrangling</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        Turning the jungle into punch cards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
-One of the aspects of the war that fascinated me the most was the push by the the then Secretary of Defense, Robert McNamara, to quantify as much of the war as was computationally possible. One of the most storage intensive of McNamara&rsquo;s efforts was the Hamlet Evaluation System, which attempted to quantify the degree to which ~12,000 small, rural Vietnamese villages had been pacified.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/putah_fishing/">Fishing at Putah Creek</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-11-28</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/fishing">fishing</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        Day trip out to Putah Creek in Winters CA.
-A few turkeys we saw before leaving Davis.
-The spot in the creek we picked out.
-Erica practicing casting.
-Testing out the waders.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/genome_cluster/">Using local R packages on UC Davis Genome Center cluster</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-11-03</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/guides">guides</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
-For example I would start R and install a package I needed and load the library with no problem.
-The code below would run without a problem.
-install.packages(&quot;glmnet&quot;) library(glmnet)  But then calling the running the same script from a batch file fails to import the library.
-I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word.
-    </div>
-</div>
-
-
-
-
-
-
-
-
-<div class="pagination">
-    
-    <div class="pag-first">
-        <a href="/tags/blogs/"><i class="iconfont icon-caret-back-circle-sharp"></i></a>
-    </div>
-    
-    
-    <div class="pag-previous">
-        <a href="/tags/blogs/"><i class="iconfont icon-chevron-back-circle-sharp"></i></a>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    <div class="pag-item">
-        <a href="/tags/blogs/">1</a>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    <div class="pag-item pag-current">
-        <a href="/tags/blogs/page/2/">2</a>
-    </div>
-    
-    
-    
-    
-</div>
 
 
 
@@ -527,6 +484,8 @@ I tried multiple possible fixes with no success until I was tipped of by a curre
             
         </div>
     </div>
+    
+    
     
     
   </div>
