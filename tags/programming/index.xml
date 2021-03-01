@@ -14,9 +14,10 @@
       
       <guid>https://ethanholleman.com/posts/california_legislature_search/</guid>
       <description>Recently I was working on automating some legislation tracking tasks for the UC Davis Legislative Affairs Committee and noticed a potential bug in displaying the results of bill information searches and wanted to note it.
-If you are interested in California legislation you can go to the state website and search for bills by a number of parameters, including by keywords as an example ce can search for &amp;ldquo;housing&amp;rdquo;.
+If you are interested in California legislation you can go to the state website and search for bills by a number of parameters, including by keywords.
 Which brings up a number of bills. Clicking on one gives us the bill&amp;rsquo;s full text with out keyword highlighted.
-The bug occurs when we search for specific html tags like div or span.</description>
+The bug occurs when we search for specific html tags like div or span.
+When these terms are searched the source html ends up being rendered on the actual page with tags highlighted.</description>
     </item>
     
     <item>
