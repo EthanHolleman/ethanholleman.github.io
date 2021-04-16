@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing and visualizing Conway&#39;s Game of Life</title>
+      <link>https://ethanholleman.com/posts/conway_game_of_life_implementation/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/conway_game_of_life_implementation/</guid>
+      <description>I took the day off today to recover from second round of the covid vaccine and spent a little while implementing my own version of Conway&amp;rsquo;s Game of Life in Python.
+Here&amp;rsquo;s an example of a simulation involving a grid of 500 x 500 cells. When initializing the first generation each cell had a 0.3 probability of starting as a living cell (start-as-living probability). Increasing this value will increase the number of cells the grid is initialized with. I ran the simulation for 100 generations.
+and with a 0.1 start-as-living probability.
+I was curious how changing the starting probability of a cell starting the simulation as living would effect the game as it progressed.</description>
+    </item>
+    
     <item>
       <title>Trip to Death Valley National Park</title>
       <link>https://ethanholleman.com/posts/death_valley/</link>

@@ -29,7 +29,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ethanholleman.com/tags/blogs/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
-<meta property="og:updated_time" content="2021-03-25T00:00:00+00:00" />
+<meta property="og:updated_time" content="2021-04-16T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
@@ -96,6 +96,22 @@
 </div>
 
 
+
+<div class="post">
+    <h2 class="post-item post-title">
+        <a href="https://ethanholleman.com/posts/conway_game_of_life_implementation/">Implementing and visualizing Conway&#39;s Game of Life</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-04-16</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
+
+    </div>
+    <div class="post-item post-summary markdown-body">
+        I took the day off today to recover from second round of the covid vaccine and spent a little while implementing my own version of Conway&rsquo;s Game of Life in Python.
+Here&rsquo;s an example of a simulation involving a grid of 500 x 500 cells. When initializing the first generation each cell had a 0.3 probability of starting as a living cell (start-as-living probability). Increasing this value will increase the number of cells the grid is initialized with. I ran the simulation for 100 generations.
+and with a 0.1 start-as-living probability.
+I was curious how changing the starting probability of a cell starting the simulation as living would effect the game as it progressed.
+    </div>
+</div>
 
 <div class="post">
     <h2 class="post-item post-title">
@@ -233,21 +249,6 @@ I ran into errors when trying to decode the state code fields, which based on th
         This recipe (aside from the electronics) is derived from Joshua Weissman&rsquo;s video, How to Make Real Tonkotsu Ramen.
 Ingredients Below are all materials you will need to prepare the soup.
 Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&rsquo;t have data from that.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/ligand_plotting/">Visualizing ligand docking results with PyMOL scripting and R</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-01-12</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/pymol">PyMOL</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        The past couple days I have been running some ligand docking simulations as part of my current rotation with the Cortopasssi lab using Rosetta. One of these docking simulations involved fitting a small portion of the insulin receptor (IR) the lab is interested in, into a known binding region of the Shc1 protein.
-Any Rosetta docking simulation will require hundreds of repetitions, which generate a significant number of pdb files which show the final conformation of the protein and ligand at the end of a given simulation.
-While reading about the best way to aggregate and do analyise on these results I spent a bit of time looking for ways to visualize everything Rosetta spits out.
     </div>
 </div>
 
