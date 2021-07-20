@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IGG on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/igg/</link>
+    <description>Recent content in IGG on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/igg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 candidacy for IGG education policy officer</title>
+      <link>https://ethanholleman.com/posts/epo/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/epo/</guid>
+      <description>I have been interested in education since my undergraduate career. While working towards my undergrad degree in bioinformatics I designed and presented a short series of lectures at a local assisted living facility focused on building proficiency with technology as a means of independence. The series covered the very basics of computer and internet usage; how to email a picture, write a letter with a word processor, and spot common signs of phishing scams. The hour sessions were in all honesty, slow, painful, and inexplicably seemed to elicit pseudo-existential questions from the participants like “Where does a window end and another begin?</description>
+    </item>
+    
+    <item>
+      <title>2021 candidacy for IGG GSA representative</title>
+      <link>https://ethanholleman.com/posts/gsa_rep/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/gsa_rep/</guid>
+      <description>Over the past academic year I have worked as a member of the Legislative Affairs Committee (LAC); a GSA committee that works to track federal and state policy that may impact UC students as it is proposed and progresses through the legislature. The reviews that the committee performs eventually help inform the positions of the UC Graduate and Professional Council who&amp;rsquo;s members advocate for graduate and professional students to the UC Regents and in state and federal legislatures.
+My focus as part of the committee was to improve the efficiency of the review and tracking of State legislative items. After learning how legislative tracking is done within the committee I identified monotonous tasks like navigating the California legislative website, searching for keywords, and summarizing bills and built a program to automate these tasks which is freely available for anyone to use.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ethanholleman.com/tags/blogs/</loc>
-    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <loc>https://ethanholleman.com/posts/epo/</loc>
+    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ethanholleman.com/posts/conway_game_of_life_implementation/</loc>
-    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <loc>https://ethanholleman.com/posts/gsa_rep/</loc>
+    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ethanholleman.com/tags/blogs/</loc>
+    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ethanholleman.com/tags/igg/</loc>
+    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ethanholleman.com/posts/</loc>
+    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ethanholleman.com/posts/conway_game_of_life_implementation/</loc>
     <lastmod>2021-04-16T00:00:00+00:00</lastmod>
   </url>
   
