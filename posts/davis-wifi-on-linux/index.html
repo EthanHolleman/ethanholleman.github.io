@@ -15,7 +15,7 @@
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
 
 
-<title>Trip to Death Valley National Park - Ethan Holleman</title>
+<title>How to actually connect to UC Davis campus wifi (Eduroam) on Linux - Ethan Holleman</title>
 
 
 <meta name="author" content="Ethan Holleman" />
@@ -24,31 +24,25 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta name="keywords" content=", national parks, blogs" />
+<meta name="keywords" content="blogs, Davis guides, Linux" />
 
-<meta property="og:title" content="Trip to Death Valley National Park" />
-<meta property="og:description" content="Quick stop at Truckee lake on the way out of California.
-Two abandoned structures just outside of Hawthorn, Nevada.
-The somewhat ill-conceived Clown Motel. Although as someone who as worked with professional clowns I am not one to malign the occupation; clowns are an extremely hard working bunch.
-Most roads past Reno heading towards Death Valley look something like this.
-Invasive Burros (donkeys) running through the scrub. Burros were unintentionally introduced to Nevada after escaping from early mining towns.
-Lady Desert The Venus, part of the Goldwell Open Air Museum by Dr.Hugo Heyrman in Rhyolite, Nevada; an abandoned mining town. Constructed before the popularization of Minecraft." />
+<meta property="og:title" content="How to actually connect to UC Davis campus wifi (Eduroam) on Linux" />
+<meta property="og:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. When I am on campus I had a really hard time consistently connecting to the campus eduroam network on my Linux machine; usually resorting to guest wifi (disgusting).
+The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another. Additionally, it may require storing your password in plain text.
+I had much better luck following this guide from the physics department. However it is outdated and there is one key change you must make for the instructions in this guide to work." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.com/posts/death_valley/" />
+<meta property="og:url" content="https://ethanholleman.com/posts/davis-wifi-on-linux/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
-<meta property="article:published_time" content="2021-03-25T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-25T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-08-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-19T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
 
-<meta name="twitter:title" content="Trip to Death Valley National Park"/>
-<meta name="twitter:description" content="Quick stop at Truckee lake on the way out of California.
-Two abandoned structures just outside of Hawthorn, Nevada.
-The somewhat ill-conceived Clown Motel. Although as someone who as worked with professional clowns I am not one to malign the occupation; clowns are an extremely hard working bunch.
-Most roads past Reno heading towards Death Valley look something like this.
-Invasive Burros (donkeys) running through the scrub. Burros were unintentionally introduced to Nevada after escaping from early mining towns.
-Lady Desert The Venus, part of the Goldwell Open Air Museum by Dr.Hugo Heyrman in Rhyolite, Nevada; an abandoned mining town. Constructed before the popularization of Minecraft."/>
+<meta name="twitter:title" content="How to actually connect to UC Davis campus wifi (Eduroam) on Linux"/>
+<meta name="twitter:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. When I am on campus I had a really hard time consistently connecting to the campus eduroam network on my Linux machine; usually resorting to guest wifi (disgusting).
+The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another. Additionally, it may require storing your password in plain text.
+I had much better luck following this guide from the physics department. However it is outdated and there is one key change you must make for the instructions in this guide to work."/>
 
 
 
@@ -106,73 +100,34 @@ Lady Desert The Venus, part of the Goldwell Open Air Museum by Dr.Hugo Heyrman i
 <article>
     
     <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/death_valley/">Trip to Death Valley National Park</a>
+        <a href="https://ethanholleman.com/posts/davis-wifi-on-linux/">How to actually connect to UC Davis campus wifi (Eduroam) on Linux</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-03-25</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/"></a>&nbsp;<a href="/tags/national-parks">national parks</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-08-19</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/davis-guides">Davis guides</a>&nbsp;<a href="/tags/linux">Linux</a>&nbsp;</span>
 
     </div>
     
     
     <div class="post-content markdown-body">
-        <p>Quick stop at Truckee lake on the way out of California.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4331.png" alt="" />
-</p>
-<p>Two abandoned structures just outside of Hawthorn, Nevada.</p>
-<p><img class="img-zoomable" src="/posts/images/abandoned_houses.png" alt="" />
-</p>
-<p>The somewhat ill-conceived Clown Motel. Although as someone who as worked
-with professional clowns I am not one to malign the occupation; clowns are an
-extremely hard working bunch.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4463.png" alt="" />
-</p>
-<p>Most roads past Reno heading towards Death Valley look something like this.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4366.png" alt="" />
-</p>
-<p>Invasive Burros (donkeys) running through the scrub. Burros were unintentionally
-introduced to Nevada after escaping from early mining towns.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4353.png" alt="" />
-</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4351.png" alt="" />
-</p>
-<p>Lady Desert The Venus, part of the <a href="https://en.wikipedia.org/wiki/Goldwell_Open_Air_Museum" target="_blank">Goldwell Open Air Museum</a> by Dr.Hugo Heyrman
-in Rhyolite, Nevada; an
-abandoned mining town. Constructed before the popularization of Minecraft.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4346.png" alt="" />
-</p>
-<p>The Last Supper (1984) by Charles Albert Szukalski also at Goldwell.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4343.png" alt="" />
-</p>
-<p>Just outside Artist&rsquo;s Palette overlooking the valley.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4386.png" alt="" />
-</p>
-<p>Artist&rsquo;s Palette.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4388.png" alt="" />
-</p>
-<p>Erica in the Artist&rsquo;s palette canyons.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4399.png" alt="" />
-</p>
-<p>View from Zabriskie Point.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4419.png" alt="" />
-</p>
-<p>Salt Creek, home of one of ~ 10 species of California Pupfish, a really classic
-and interesting example of allopatric speciation. The 10 species diverged from
-a single ancestor when the drying of ancient lake Manley separated the populations
-into isolated pockets.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4436.png" alt="" />
-</p>
-<p>Pupfish closeup.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4440.png" alt="" />
-</p>
-<p>Erica walking across the <a href="https://www.nps.gov/deva/learn/nature/sand-dunes.htm" target="_blank">Mesquite flats</a> sand dunes.
-<img class="img-zoomable" src="/posts/images/IMG_4427.png" alt="" />
-</p>
-<p>Picnic in the Mesquite dunes around dusk.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4456.png" alt="" />
-</p>
-<p>Sunset at  Mesquite dunes.</p>
-<p><img class="img-zoomable" src="/posts/images/IMG_4452.png" alt="" />
-</p>
+        <p>I use Ubuntu 20.04 as my daily driver operating system at work and
+at home. When I am on campus I had a really hard time consistently
+connecting to the campus eduroam network on my Linux machine; usually
+resorting to guest wifi (disgusting).</p>
+<p>The <a href="https://servicehubtest.ucdavis.edu/servicehub/?id=ucd_kb_article&amp;sys_id=4c3c77664f83f2409cab76601310c767" target="_blank">Davis IT knowledge hub</a>
+suggests you run a Eduroam provided Python script configuration program.
+This worked on one of my machines and failed on another. Additionally, it
+may require storing your password in plain text.</p>
+<p>I had much better luck following <a href="https://ithelp.physics.ucdavis.edu/kb/linux-wireless-connection-issues-eduroam-and-moobilenetx" target="_blank">this guide</a>
+from the physics department. However it is outdated and there is one key change you <em>must</em> make
+for the instructions in this guide to work.</p>
+<p>The guide instructs you to use a file located at <code>/etc/ssl/certs/AddTrust_External_Root.crt</code> as
+your CA certificate when configuring the connection. Unless you have an older
+machine this file will probably not exist. This is because this particular certificate
+expired in <a href="https://calnetweb.berkeley.edu/calnet-technologists/incommon-sectigo-certificate-service/addtrust-external-root-expiration-may-2020" target="_blank">May 2020</a> and has been updated.</p>
+<p>Instead make sure to use the certificate located at
+<code>/etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem</code>. Follow all other instructions
+provided by the physics department.</p>
+<p>Hope this is helpful!</p>
 
     </div>
 </article>
