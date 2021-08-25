@@ -27,9 +27,8 @@
 <meta name="keywords" content="blogs, Davis guides, Linux" />
 
 <meta property="og:title" content="How to actually connect to UC Davis campus wifi (Eduroam) on Linux" />
-<meta property="og:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. When I am on campus I had a really hard time consistently connecting to the campus eduroam network on my Linux machine; usually resorting to guest wifi (disgusting).
-The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another. Additionally, it may require storing your password in plain text.
-I had much better luck following this guide from the physics department. However it is outdated and there is one key change you must make for the instructions in this guide to work." />
+<meta property="og:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. Until recently, when I was on campus I had a really hard time consistently connecting to the Eduroam network on my Linux machine; usually resorting to guest wifi (disgusting) and requesting a new login every two weeks after my credentials expired.
+A few days ago I decided I was going guest wifi cold turkey and returned to by search for any resources that might be available. The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ethanholleman.com/posts/davis-wifi-on-linux/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
@@ -40,9 +39,8 @@ I had much better luck following this guide from the physics department. However
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
 
 <meta name="twitter:title" content="How to actually connect to UC Davis campus wifi (Eduroam) on Linux"/>
-<meta name="twitter:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. When I am on campus I had a really hard time consistently connecting to the campus eduroam network on my Linux machine; usually resorting to guest wifi (disgusting).
-The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another. Additionally, it may require storing your password in plain text.
-I had much better luck following this guide from the physics department. However it is outdated and there is one key change you must make for the instructions in this guide to work."/>
+<meta name="twitter:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. Until recently, when I was on campus I had a really hard time consistently connecting to the Eduroam network on my Linux machine; usually resorting to guest wifi (disgusting) and requesting a new login every two weeks after my credentials expired.
+A few days ago I decided I was going guest wifi cold turkey and returned to by search for any resources that might be available. The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another."/>
 
 
 
@@ -110,22 +108,25 @@ I had much better luck following this guide from the physics department. However
     
     <div class="post-content markdown-body">
         <p>I use Ubuntu 20.04 as my daily driver operating system at work and
-at home. When I am on campus I had a really hard time consistently
-connecting to the campus eduroam network on my Linux machine; usually
-resorting to guest wifi (disgusting).</p>
-<p>The <a href="https://servicehubtest.ucdavis.edu/servicehub/?id=ucd_kb_article&amp;sys_id=4c3c77664f83f2409cab76601310c767" target="_blank">Davis IT knowledge hub</a>
+at home. Until recently, when I was on campus I had a really hard time consistently
+connecting to the Eduroam network on my Linux machine; usually
+resorting to guest wifi (disgusting) and requesting a new login every two
+weeks after my credentials expired.</p>
+<p>A few days ago I decided I was going guest wifi cold turkey and returned to
+by search for any resources that might be available. The <a href="https://servicehubtest.ucdavis.edu/servicehub/?id=ucd_kb_article&amp;sys_id=4c3c77664f83f2409cab76601310c767" target="_blank">Davis IT knowledge hub</a>
 suggests you run a Eduroam provided Python script configuration program.
 This worked on one of my machines and failed on another. Additionally, it
-may require storing your password in plain text.</p>
-<p>I had much better luck following <a href="https://ithelp.physics.ucdavis.edu/kb/linux-wireless-connection-issues-eduroam-and-moobilenetx" target="_blank">this guide</a>
-from the physics department. However it is outdated and there is one key change you <em>must</em> make
-for the instructions in this guide to work.</p>
+may require storing your password in plain text (don&rsquo;t do this). I had much
+better luck following <a href="https://ithelp.physics.ucdavis.edu/kb/linux-wireless-connection-issues-eduroam-and-moobilenetx" target="_blank">this guide</a>
+from the physics department. However it is outdated and there is one key
+change you <strong>must</strong> make for the instructions in this guide to work.</p>
 <p>The guide instructs you to use a file located at <code>/etc/ssl/certs/AddTrust_External_Root.crt</code> as
 your CA certificate when configuring the connection. Unless you have an older
 machine this file will probably not exist. This is because this particular certificate
-expired in <a href="https://calnetweb.berkeley.edu/calnet-technologists/incommon-sectigo-certificate-service/addtrust-external-root-expiration-may-2020" target="_blank">May 2020</a> and has been updated.</p>
-<p>Instead make sure to use the certificate located at
-<code>/etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem</code>. Follow all other instructions
+expired in <a href="https://calnetweb.berkeley.edu/calnet-technologists/incommon-sectigo-certificate-service/addtrust-external-root-expiration-may-2020" target="_blank">May 2020</a>
+and has been updated. Instead, make sure to use the certificate located at
+<code>/etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem</code>. This path may be slightly
+different if you are using a different distro. Follow all other instructions
 provided by the physics department.</p>
 <p>Hope this is helpful!</p>
 
