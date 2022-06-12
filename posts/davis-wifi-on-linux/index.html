@@ -27,8 +27,8 @@
 <meta name="keywords" content="blogs, Davis guides, Linux" />
 
 <meta property="og:title" content="How to actually connect to UC Davis campus wifi (Eduroam) on Linux" />
-<meta property="og:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. Until recently, when I was on campus I had a really hard time consistently connecting to the Eduroam network on my Linux machine; usually resorting to guest wifi (disgusting) and requesting a new login every two weeks after my credentials expired.
-A few days ago I decided I was going guest wifi cold turkey and returned to by search for any resources that might be available. The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another." />
+<meta property="og:description" content="Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
+ Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file.  openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation  Save and reboot." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ethanholleman.com/posts/davis-wifi-on-linux/" />
 <meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
@@ -39,8 +39,8 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
 
 <meta name="twitter:title" content="How to actually connect to UC Davis campus wifi (Eduroam) on Linux"/>
-<meta name="twitter:description" content="I use Ubuntu 20.04 as my daily driver operating system at work and at home. Until recently, when I was on campus I had a really hard time consistently connecting to the Eduroam network on my Linux machine; usually resorting to guest wifi (disgusting) and requesting a new login every two weeks after my credentials expired.
-A few days ago I decided I was going guest wifi cold turkey and returned to by search for any resources that might be available. The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another."/>
+<meta name="twitter:description" content="Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
+ Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file.  openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation  Save and reboot."/>
 
 
 
@@ -107,7 +107,34 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
     
     
     <div class="post-content markdown-body">
-        <p>I use Ubuntu 20.04 as my daily driver operating system at work and
+        <h2 id="update-for-jammy-jellyfish-users-may-2022">Update for Jammy Jellyfish users: May 2022</h2>
+<p>If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found
+yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue
+with Eduroam that I do not currently pretend to understand but no one cares
+about that anyway. You want answers. Here is what worked for me which is based
+off of <a href="https://bugs.launchpad.net/ubuntu/&#43;source/openssl/&#43;bug/1963834" target="_blank">this bug report</a>.</p>
+<ol>
+<li>Open <code>/usr/lib/ssl/openssl.cnf</code> in your favorite text editor.</li>
+<li>Add the following lines to the beginning of the file.</li>
+</ol>
+<pre><code>openssl_conf = openssl_init
+
+[openssl_init]
+ssl_conf = ssl_sect
+
+[ssl_sect]
+system_default = system_default_sect
+
+[system_default_sect]
+Options = UnsafeLegacyRennegotiation
+</code></pre>
+<ol start="3">
+<li>Save and reboot. Attempt re-connecting with the according to <a href="https://kb.northwestern.edu/page.php?id=109238" target="_blank">this guide</a>
+but use your Davis CAS credentials.</li>
+</ol>
+<p>Good luck.</p>
+<h2 id="pre-2022-leaving-up-for-archival-purposes">Pre-2022: Leaving up for archival purposes</h2>
+<p>I use Ubuntu 20.04 as my daily driver operating system at work and
 at home. Until recently, when I was on campus I had a really hard time consistently
 connecting to the Eduroam network on my Linux machine; usually
 resorting to guest wifi (disgusting) and requesting a new login every two
@@ -182,6 +209,10 @@ provided by the physics department.</p>
         <div>
             
             <span>
+                <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
                 <a href="/tags/blogs/">blogs</a>
             </span>
             
@@ -218,6 +249,10 @@ provided by the physics department.</p>
             </span>
             
             <span>
+                <a href="/tags/foam-pro-tour/">Foam Pro Tour</a>
+            </span>
+            
+            <span>
                 <a href="/tags/guides/">guides</a>
             </span>
             
@@ -239,6 +274,10 @@ provided by the physics department.</p>
             
             <span>
                 <a href="/tags/national-parks/">national parks</a>
+            </span>
+            
+            <span>
+                <a href="/tags/nerf/">Nerf</a>
             </span>
             
             <span>
@@ -334,6 +373,10 @@ provided by the physics department.</p>
         <div>
             
             <span>
+                <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
                 <a href="/tags/blogs/">blogs</a>
             </span>
             
@@ -370,6 +413,10 @@ provided by the physics department.</p>
             </span>
             
             <span>
+                <a href="/tags/foam-pro-tour/">Foam Pro Tour</a>
+            </span>
+            
+            <span>
                 <a href="/tags/guides/">guides</a>
             </span>
             
@@ -391,6 +438,10 @@ provided by the physics department.</p>
             
             <span>
                 <a href="/tags/national-parks/">national parks</a>
+            </span>
+            
+            <span>
+                <a href="/tags/nerf/">Nerf</a>
             </span>
             
             <span>
@@ -439,7 +490,7 @@ provided by the physics department.</p>
                 Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
             </p>
             
-            <span>&copy; 2020-2021
+            <span>&copy; 2020-2022
                 <a href="https://ethanholleman.com">Ethan Holleman</a>
                  | <a href="https://github.com/EthanHolleman/ethanholleman.github.io">Source code</a>  | <a href="https://ethanholleman.com/privacy">Privacy policy</a>
                 

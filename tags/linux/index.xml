@@ -13,8 +13,8 @@
       <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ethanholleman.com/posts/davis-wifi-on-linux/</guid>
-      <description>I use Ubuntu 20.04 as my daily driver operating system at work and at home. Until recently, when I was on campus I had a really hard time consistently connecting to the Eduroam network on my Linux machine; usually resorting to guest wifi (disgusting) and requesting a new login every two weeks after my credentials expired.
-A few days ago I decided I was going guest wifi cold turkey and returned to by search for any resources that might be available. The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another.</description>
+      <description>Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
+ Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file.  openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation  Save and reboot.</description>
     </item>
     
   </channel>

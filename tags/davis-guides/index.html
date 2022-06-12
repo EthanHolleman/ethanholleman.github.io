@@ -106,8 +106,8 @@
 
     </div>
     <div class="post-item post-summary markdown-body">
-        I use Ubuntu 20.04 as my daily driver operating system at work and at home. Until recently, when I was on campus I had a really hard time consistently connecting to the Eduroam network on my Linux machine; usually resorting to guest wifi (disgusting) and requesting a new login every two weeks after my credentials expired.
-A few days ago I decided I was going guest wifi cold turkey and returned to by search for any resources that might be available. The Davis IT knowledge hub suggests you run a Eduroam provided Python script configuration program. This worked on one of my machines and failed on another.
+        Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
+ Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file.  openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation  Save and reboot.
     </div>
 </div>
 
@@ -166,6 +166,10 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
         <div>
             
             <span>
+                <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
                 <a href="/tags/blogs/">blogs</a>
             </span>
             
@@ -202,6 +206,10 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
             </span>
             
             <span>
+                <a href="/tags/foam-pro-tour/">Foam Pro Tour</a>
+            </span>
+            
+            <span>
                 <a href="/tags/guides/">guides</a>
             </span>
             
@@ -223,6 +231,10 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
             
             <span>
                 <a href="/tags/national-parks/">national parks</a>
+            </span>
+            
+            <span>
+                <a href="/tags/nerf/">Nerf</a>
             </span>
             
             <span>
@@ -318,6 +330,10 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
         <div>
             
             <span>
+                <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
                 <a href="/tags/blogs/">blogs</a>
             </span>
             
@@ -354,6 +370,10 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
             </span>
             
             <span>
+                <a href="/tags/foam-pro-tour/">Foam Pro Tour</a>
+            </span>
+            
+            <span>
                 <a href="/tags/guides/">guides</a>
             </span>
             
@@ -375,6 +395,10 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
             
             <span>
                 <a href="/tags/national-parks/">national parks</a>
+            </span>
+            
+            <span>
+                <a href="/tags/nerf/">Nerf</a>
             </span>
             
             <span>
@@ -421,7 +445,7 @@ A few days ago I decided I was going guest wifi cold turkey and returned to by s
                 Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
             </p>
             
-            <span>&copy; 2020-2021
+            <span>&copy; 2020-2022
                 <a href="https://ethanholleman.com">Ethan Holleman</a>
                  | <a href="https://github.com/EthanHolleman/ethanholleman.github.io">Source code</a>  | <a href="https://ethanholleman.com/privacy">Privacy policy</a>
                 
