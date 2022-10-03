@@ -6,7 +6,20 @@
     <description>Recent content in blogs on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is the site banner image of?</title>
+      <link>https://ethanholleman.com/posts/sitebanner/</link>
+      <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/sitebanner/</guid>
+      <description>The site banner image is actually a specific type of infill pattern used in 3D printing called &amp;ldquo;gyroid infill&amp;rdquo;.
+Generally, to save time and plastic, parts that are 3D printed are not printed as 100% solid blocks. Instead the user will set a infill percentage that defines how much of the interior space is filled. Once that is decided you still need to determine exactly how you are going to fill that space so it can be translated into commands the printer can understand.
+Enter infill patterns.
+Image courtsey of Cura
+These are strategies used to fill in the internal space of a printed object.</description>
+    </item>
+    
     <item>
       <title>Rejoice, the golden age of Nerf is upon us! A general overview of the state of hobby grade and competitive foam dart tag</title>
       <link>https://ethanholleman.com/posts/hobby-grade-nerf/</link>
@@ -23,7 +36,7 @@
       
       <guid>https://ethanholleman.com/posts/davis-wifi-on-linux/</guid>
       <description>Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
- Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file.  openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation  Save and reboot.</description>
+Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file. openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation Save and reboot.</description>
     </item>
     
     <item>
@@ -103,8 +116,7 @@ When these terms are searched the source html ends up being rendered on the actu
       <guid>https://ethanholleman.com/posts/polo_published/</guid>
       <description>Polo: an open-source graphical user interface for crystallization screening was just published in the Journal of Applied Crystallography. It is my first academic paper as well as my first first-author paper.
 Please check out the article at this link!
-Below are a few of the figures from the article, click to be taken to the full descriptions.
-  </description>
+Below are a few of the figures from the article, click to be taken to the full descriptions.</description>
     </item>
     
     <item>
@@ -147,7 +159,7 @@ I ran into errors when trying to decode the state code fields, which based on th
       <guid>https://ethanholleman.com/posts/tonkatsu/</guid>
       <description>This recipe (aside from the electronics) is derived from Joshua Weissman&amp;rsquo;s video, How to Make Real Tonkotsu Ramen.
 Ingredients Below are all materials you will need to prepare the soup.
-Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&amp;rsquo;t have data from that.</description>
+Broth / soup Ingredient Quantity Units Pig trotters 3 lbs Green onion 1 bunch Yellow onion 1 Shallot 2 Knob ginger 2 inches Ramen noodles 1 package Chashu (Braised pork belly) Ingredient Quantity Units Pork belly 2 lbs Soy sauce 1/2 cup Mirin 3/4 cup Sake 1 cup Ginger knob 2 inches Green onion 1 bunch Glove garlic 5 cloves Tare Ingredient Quantity Units Bonito flakes 1/2 cup Kombu 3 pieces Soy sauce 3/4 cup Dried shiitake mushrooms 1/4 cup Chashu braising liquid 1/4 cup Electronics (Optional) Ingredient Quantity Raspberry Pi 1 DS18B20 Temperature Sensor Module Kit 1 Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&amp;rsquo;t have data from that.</description>
     </item>
     
     <item>
@@ -170,7 +182,7 @@ While reading about the best way to aggregate and do analyise on these results I
       <description>I spent most of the day today learning about Javascript and CSS by building a (very ameutur) website that you can use to test your Poker pot odds calculation skills.
 Determining pot odds is useful as when compared to the probability of winning a hand the call&amp;rsquo;s expected value can be approximated.
 You can visit the website at potoddsquiz.com view the the code at the GitHub page or use the website embedded directly below.
- This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.</description>
+This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.</description>
     </item>
     
     <item>
@@ -192,17 +204,19 @@ If you want to cut to the chase, you can run this script, which will run all the
       
       <guid>https://ethanholleman.com/posts/yosemite/</guid>
       <description>Day trip to Yosemite National Park.
-Hike up to mirror lake   Campground near Curry Village
-    Good advice.
-    Ethan with log on the trail.
-    Erica with boulder.
-    Moss 1.
-    Moss 2.
-    Moss 3 (lots of interesting mosses).
-  At mirror lake   Mirror Lake visitor info placard.
-    Mirror lake facing Northwest towards Mt. Watkins.
-    Half Dome.
-    Ethan and Erica in front of Half Dome.</description>
+Hike up to mirror lake Campground near Curry Village
+Good advice.
+Ethan with log on the trail.
+Erica with boulder.
+Moss 1.
+Moss 2.
+Moss 3 (lots of interesting mosses).
+At mirror lake Mirror Lake visitor info placard.
+Mirror lake facing Northwest towards Mt. Watkins.
+Half Dome.
+Ethan and Erica in front of Half Dome.
+Interesting log, ground in the log&amp;rsquo;s shadow remained frozen.
+Panoramic view facing Northeast with (from left to right) Mt. Watkins, Ahwiyah Point and Half Dome in view.</description>
     </item>
     
     <item>
@@ -263,8 +277,8 @@ California changes a man </description>
       <guid>https://ethanholleman.com/posts/running_winnings/</guid>
       <description>Y axis of all plots are unit-less.
 Running stack sizes Shows each players cumulative stack over all nights played.
- Winnings by date Plot of each players winnings (stack at the end of the round - buy in) over time.
- All games have been played virtually, for info on how we host these see this post.</description>
+Winnings by date Plot of each players winnings (stack at the end of the round - buy in) over time.
+All games have been played virtually, for info on how we host these see this post.</description>
     </item>
     
     <item>
@@ -310,7 +324,7 @@ Testing out the waders.</description>
       <description>I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
 For example I would start R and install a package I needed and load the library with no problem.
 The code below would run without a problem.
-install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet)  But then calling the running the same script from a batch file fails to import the library.
+install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet) But then calling the running the same script from a batch file fails to import the library.
 I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word.</description>
     </item>
     
@@ -321,8 +335,7 @@ I tried multiple possible fixes with no success until I was tipped of by a curre
       
       <guid>https://ethanholleman.com/posts/letter_to_d113/</guid>
       <description>This was a letter I wrote to my local high school district board during the early days of lock down titled &amp;ldquo;Creative Approaches in This Coming School Year&amp;rdquo;.
-This browser does not support PDFs. Please download the PDF to view it: Download PDF.
-  </description>
+This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
     </item>
     
   </channel>

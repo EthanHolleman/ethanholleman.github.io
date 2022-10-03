@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about this site on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/about-this-site/</link>
+    <description>Recent content in about this site on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/about-this-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is the site banner image of?</title>
+      <link>https://ethanholleman.com/posts/sitebanner/</link>
+      <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/sitebanner/</guid>
+      <description>The site banner image is actually a specific type of infill pattern used in 3D printing called &amp;ldquo;gyroid infill&amp;rdquo;.
+Generally, to save time and plastic, parts that are 3D printed are not printed as 100% solid blocks. Instead the user will set a infill percentage that defines how much of the interior space is filled. Once that is decided you still need to determine exactly how you are going to fill that space so it can be translated into commands the printer can understand.
+Enter infill patterns.
+Image courtsey of Cura
+These are strategies used to fill in the internal space of a printed object.</description>
+    </item>
+    
+  </channel>
+</rss>

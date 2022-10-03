@@ -28,7 +28,7 @@ If you want to cut to the chase, you can run this script, which will run all the
       <description>I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
 For example I would start R and install a package I needed and load the library with no problem.
 The code below would run without a problem.
-install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet)  But then calling the running the same script from a batch file fails to import the library.
+install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet) But then calling the running the same script from a batch file fails to import the library.
 I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word.</description>
     </item>
     

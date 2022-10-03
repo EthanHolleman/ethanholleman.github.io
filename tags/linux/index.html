@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.78.2" />
+<meta name="generator" content="Hugo 0.104.2" />
 
 
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
@@ -27,9 +27,8 @@
 <meta property="og:title" content="Linux" />
 <meta property="og:description" content="A minimal Hugo theme with nice theme color." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ethanholleman.com/tags/linux/" />
-<meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
-<meta property="og:updated_time" content="2021-08-19T00:00:00+00:00" />
+<meta property="og:url" content="https://ethanholleman.com/tags/linux/" /><meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
@@ -76,14 +75,40 @@
   }
 </script>
 
-    <header>
-    <div class="container-lg clearfix">
-        <div class="col-12 header">
-            <a class="title-main" href="https://ethanholleman.com">Ethan Holleman</a>
-            
-        </div>
-    </div>
+    <style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/static/img/path1148.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  header {
+    min-height:160px;
+}
+
+
+</style>
+<header>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:70px">Ethan Holleman</h1>
+  </div>
+</div>
 </header>
+
 
     <main>
         <div class="container-lg clearfix">
@@ -107,7 +132,7 @@
     </div>
     <div class="post-item post-summary markdown-body">
         Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
- Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file.  openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation  Save and reboot.
+Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file. openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation Save and reboot.
     </div>
 </div>
 
@@ -140,6 +165,10 @@
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -167,6 +196,10 @@
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>
@@ -304,6 +337,10 @@
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -331,6 +368,10 @@
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>

@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.78.2" />
+<meta name="generator" content="Hugo 0.104.2" />
 
 
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
@@ -27,9 +27,8 @@
 <meta property="og:title" content="Posts" />
 <meta property="og:description" content="Landing page for posts" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ethanholleman.com/posts/" />
-<meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
-<meta property="og:updated_time" content="2022-06-12T00:00:00+00:00" />
+<meta property="og:url" content="https://ethanholleman.com/posts/" /><meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
@@ -76,14 +75,40 @@
   }
 </script>
 
-    <header>
-    <div class="container-lg clearfix">
-        <div class="col-12 header">
-            <a class="title-main" href="https://ethanholleman.com">Ethan Holleman</a>
-            
-        </div>
-    </div>
+    <style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/static/img/path1148.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  header {
+    min-height:160px;
+}
+
+
+</style>
+<header>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:70px">Ethan Holleman</h1>
+  </div>
+</div>
 </header>
+
 
     <main>
         <div class="container-lg clearfix">
@@ -95,6 +120,21 @@
 
 
 
+
+<div class="post">
+    <h2 class="post-item post-title">
+        <a href="https://ethanholleman.com/posts/leafly_data/">Scraping leafly.com cannabis strain data</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-02-16</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;<a href="/tags/r">R</a>&nbsp;</span>
+
+    </div>
+    <div class="post-item post-summary markdown-body">
+        Recently I was asked by a friend if they knew about any databases that classified cannabis strains by symptoms people tend to use them to relieve. I didn&rsquo;t know of the existence of any but had heard about leafly.com which catalogues user reviews of various cannabis strains and compiles data on their characteristics.
+I thought this could be a good place for them to start and so I started looking into what it would take to make a webscrapper to pull down all the data leafly has complied on hundreds on cannabis strains.
+It turns out it didn&rsquo;t take that much.
+    </div>
+</div>
 
 <div class="post">
     <h2 class="post-item post-title">
@@ -136,7 +176,7 @@ I ran into errors when trying to decode the state code fields, which based on th
     <div class="post-item post-summary markdown-body">
         This recipe (aside from the electronics) is derived from Joshua Weissman&rsquo;s video, How to Make Real Tonkotsu Ramen.
 Ingredients Below are all materials you will need to prepare the soup.
-Broth / soup    Ingredient Quantity Units     Pig trotters 3 lbs   Green onion 1 bunch   Yellow onion 1    Shallot 2    Knob ginger 2 inches   Ramen noodles 1 package    Chashu (Braised pork belly)    Ingredient Quantity Units     Pork belly 2 lbs   Soy sauce 1/2 cup   Mirin 3/4 cup   Sake 1 cup   Ginger knob 2 inches   Green onion 1 bunch   Glove garlic 5 cloves    Tare    Ingredient Quantity Units     Bonito flakes 1/2 cup   Kombu 3 pieces   Soy sauce 3/4 cup   Dried shiitake mushrooms 1/4 cup   Chashu braising liquid 1/4 cup    Electronics (Optional)    Ingredient Quantity     Raspberry Pi 1   DS18B20 Temperature Sensor Module Kit 1    Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&rsquo;t have data from that.
+Broth / soup Ingredient Quantity Units Pig trotters 3 lbs Green onion 1 bunch Yellow onion 1 Shallot 2 Knob ginger 2 inches Ramen noodles 1 package Chashu (Braised pork belly) Ingredient Quantity Units Pork belly 2 lbs Soy sauce 1/2 cup Mirin 3/4 cup Sake 1 cup Ginger knob 2 inches Green onion 1 bunch Glove garlic 5 cloves Tare Ingredient Quantity Units Bonito flakes 1/2 cup Kombu 3 pieces Soy sauce 3/4 cup Dried shiitake mushrooms 1/4 cup Chashu braising liquid 1/4 cup Electronics (Optional) Ingredient Quantity Raspberry Pi 1 DS18B20 Temperature Sensor Module Kit 1 Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&rsquo;t have data from that.
     </div>
 </div>
 
@@ -167,7 +207,7 @@ While reading about the best way to aggregate and do analyise on these results I
         I spent most of the day today learning about Javascript and CSS by building a (very ameutur) website that you can use to test your Poker pot odds calculation skills.
 Determining pot odds is useful as when compared to the probability of winning a hand the call&rsquo;s expected value can be approximated.
 You can visit the website at potoddsquiz.com view the the code at the GitHub page or use the website embedded directly below.
- This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.
+This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.
     </div>
 </div>
 
@@ -197,17 +237,19 @@ If you want to cut to the chase, you can run this script, which will run all the
     </div>
     <div class="post-item post-summary markdown-body">
         Day trip to Yosemite National Park.
-Hike up to mirror lake   Campground near Curry Village
-    Good advice.
-    Ethan with log on the trail.
-    Erica with boulder.
-    Moss 1.
-    Moss 2.
-    Moss 3 (lots of interesting mosses).
-  At mirror lake   Mirror Lake visitor info placard.
-    Mirror lake facing Northwest towards Mt. Watkins.
-    Half Dome.
-    Ethan and Erica in front of Half Dome.
+Hike up to mirror lake Campground near Curry Village
+Good advice.
+Ethan with log on the trail.
+Erica with boulder.
+Moss 1.
+Moss 2.
+Moss 3 (lots of interesting mosses).
+At mirror lake Mirror Lake visitor info placard.
+Mirror lake facing Northwest towards Mt. Watkins.
+Half Dome.
+Ethan and Erica in front of Half Dome.
+Interesting log, ground in the log&rsquo;s shadow remained frozen.
+Panoramic view facing Northeast with (from left to right) Mt. Watkins, Ahwiyah Point and Half Dome in view.
     </div>
 </div>
 
@@ -239,23 +281,6 @@ For an upcoming Zoom party I created a python command line application that take
 User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
 There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
 The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A.
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/cog_sars/">Plotting COG-UK Data</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-12-21</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/r">R</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        The Covid-19 Genomics UK Consortium has been collecting and sequencing thousands of COVID-19 genomes from patients in the UK and around the world.
-All of their data is publicly available. Here I played around with the phylogenetic tree they have created from global alignments of all the genomes they have sequenced.
-You can download the tree in Newick format from their data page which also hosts sequences and the alignment files.
-Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by country Note this plot is log scale in the y-axis.
-16 most prevalent UK COVID-19 lineages Density plots showing the number of genomes of the 16 most prevalent lineages detected by COG-UK.
     </div>
 </div>
 
@@ -342,6 +367,10 @@ Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by 
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -369,6 +398,10 @@ Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by 
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>
@@ -506,6 +539,10 @@ Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by 
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -533,6 +570,10 @@ Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by 
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>

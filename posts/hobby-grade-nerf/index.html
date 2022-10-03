@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.78.2" />
+<meta name="generator" content="Hugo 0.104.2" />
 
 
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
@@ -29,10 +29,10 @@
 <meta property="og:title" content="Rejoice, the golden age of Nerf is upon us! A general overview of the state of hobby grade and competitive foam dart tag" />
 <meta property="og:description" content="It is likely you have come into contact with the Nerf brand at some point in your life. Hasbro&rsquo;s iconic line of foam flinging mechanisms, until recently, held a near complete monopoly on the hobby. While Nerf blasters remain fun for casual around-the-house or workplace battles, for many, they simply do not pack enough of a punch. There has always been a small continent of nerds who longed to maintain the goofy persona that Nerf affords with its bright colors, oversized projectiles, and exaggerated designs but push the limits of their blasters. These early &ldquo;hobby grade&rdquo; Nerfers modified existing blasters and even constructed completely original designs using parts you could buy from a hardware store." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.com/posts/hobby-grade-nerf/" />
-<meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
+<meta property="og:url" content="https://ethanholleman.com/posts/hobby-grade-nerf/" /><meta property="og:image" content="https://ethanholleman.com/img/og.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-06-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-06-12T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
@@ -79,14 +79,40 @@
   }
 </script>
 
-    <header>
-    <div class="container-lg clearfix">
-        <div class="col-12 header">
-            <a class="title-main" href="https://ethanholleman.com">Ethan Holleman</a>
-            
-        </div>
-    </div>
+    <style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/static/img/path1148.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  header {
+    min-height:160px;
+}
+
+
+</style>
+<header>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:70px">Ethan Holleman</h1>
+  </div>
+</div>
 </header>
+
 
     <main>
         <div class="container-lg clearfix">
@@ -146,9 +172,8 @@ by the advent of affordable, accessible and reasonably reliable hobby grade
 grade 3D modeling software has resulted in an explosion in what can only
 really be termed &ldquo;Nerf technology&rdquo;.</p>
 <p><strong>My modified Ender 3V2 printer</strong>
-<figure>
-    <img src="/posts/images/nerf/myPrinter.jpg"
-         alt="The 3D printer I use for all my Nerf related prints. I have added parts (some printed on this machine) in an attempt to increase performance and reliability. The Ender3 is a common workhorse machine due to its low cost at the price of requiring occasional tinkering in order to keep running consistently."/> <figcaption>
+<figure><img src="/posts/images/nerf/myPrinter.jpg"
+         alt="The 3D printer I use for all my Nerf related prints. I have added parts (some printed on this machine) in an attempt to increase performance and reliability. The Ender3 is a common workhorse machine due to its low cost at the price of requiring occasional tinkering in order to keep running consistently."/><figcaption>
             <p>The 3D printer I use for all my Nerf related prints. I have added parts (some printed on this machine) in an attempt to increase performance and reliability. The Ender3 is a common workhorse machine due to its low cost at the price of requiring occasional tinkering in order to keep running consistently.</p>
         </figcaption>
 </figure>
@@ -163,9 +188,8 @@ in hobby grade Nerf has been driven and proliferated almost entirely from the bo
 Today the highest performing blasters have been designed entirely by members
 of the community.</p>
 <p><strong>Popular open source blasters</strong>
-<figure>
-    <img src="/posts/images/nerf/openSourceBlasters.png"
-         alt="Top to bottom, right to left. The Caliburn a spring powered blaster by CaptainSlug. The Lynx a bullpup springer by Orion Blasters that has gained popularity in the competitive nerf community. The Gryphon, a flywheel powered blaster by Flygonial. Talon Claw, a shorter more compact version of the Caliburn also by CaptainSlug. The files for all of these blasters are freely available for anyone to download and print. Parts that cannot be printed (springs, screws, metal rails) are often sold as hardware kits by the designer."/> <figcaption>
+<figure><img src="/posts/images/nerf/openSourceBlasters.png"
+         alt="Top to bottom, right to left. The Caliburn a spring powered blaster by CaptainSlug. The Lynx a bullpup springer by Orion Blasters that has gained popularity in the competitive nerf community. The Gryphon, a flywheel powered blaster by Flygonial. Talon Claw, a shorter more compact version of the Caliburn also by CaptainSlug. The files for all of these blasters are freely available for anyone to download and print. Parts that cannot be printed (springs, screws, metal rails) are often sold as hardware kits by the designer."/><figcaption>
             <p>Top to bottom, right to left. The Caliburn a spring powered blaster by CaptainSlug. The Lynx a bullpup springer by Orion Blasters that has gained popularity in the competitive nerf community. The Gryphon, a flywheel powered blaster by Flygonial. Talon Claw, a shorter more compact version of the Caliburn also by CaptainSlug. The files for all of these blasters are freely available for anyone to download and print. Parts that cannot be printed (springs, screws, metal rails) are often sold as hardware kits by the designer.</p>
         </figcaption>
 </figure>
@@ -200,9 +224,8 @@ as more reliable affordable 3D printers make their way onto the market.</p>
 <p>The significantly improved performance of ultrastock blasters has allowed
 a completely new style of dart tag games to emerge that bears more resemblance
 to paintball than traditional Nerf wars.</p>
-<figure>
-    <img src="/posts/images/nerf/fptLogo.png"
-         alt="Foam Pro Tour 2022 logo. Courtesy of foamprotour.com."/> <figcaption>
+<figure><img src="/posts/images/nerf/fptLogo.png"
+         alt="Foam Pro Tour 2022 logo. Courtesy of foamprotour.com."/><figcaption>
             <p>Foam Pro Tour 2022 logo. Courtesy of foamprotour.com.</p>
         </figcaption>
 </figure>
@@ -210,10 +233,9 @@ to paintball than traditional Nerf wars.</p>
 <p>One of the largest and most popular tournaments being the Foam Pro Tour in which
 dart tag teams from around the country compete for what is effectively
 the Super Bowl of Nerf.</p>
-<figure>
-    <img src="/posts/images/nerf/fptPracticePics.png"
-         alt="Images from a practice match with team BAD; my competitive dart tag team. Images courtesy of fish855 via flickr."/> <figcaption>
-            <p>Images from a practice match with team BAD; my competitive dart tag team. Images courtesy of <a href="https://www.flickr.com/photos/93119545@N06/albums/with/72177720299331855">fish855 via flickr</a>.</p>
+<figure><img src="/posts/images/nerf/fptPracticePics.png"
+         alt="Images from a practice match with team BAD; my competitive dart tag team. Images courtesy of fish855 via flickr."/><figcaption>
+            <p>Images from a practice match with team BAD; my competitive dart tag team. Images courtesy of <a href="https://www.flickr.com/photos/93119545@N06/albums/with/72177720299331855" target="_blank">fish855 via flickr</a>.</p>
         </figcaption>
 </figure>
 
@@ -226,10 +248,9 @@ to sign a waiver.</p>
 <p>For those who see the challenge of building and tuning their blasters and gear
 as part of the fun (or for whom cash is no object) a number of super and
 ultrastock communities have formed across the US and the world.</p>
-<figure>
-    <img src="/posts/images/nerf/BAUS.jpeg"
-         alt="Logo for the Bay Area Ultra Stock (BAUS) dart tag group with whom I tend to play most of my ultrastock games with. If you are in the San Fransico Bay Area you can get involved by joining the group&amp;rsquo;s discord at this link." width="80%"/> <figcaption>
-            <p>Logo for the Bay Area Ultra Stock (BAUS) dart tag group with whom I tend to play most of my ultrastock games with. If you are in the San Fransico Bay Area you can get involved by joining the group&rsquo;s discord <a href="https://discord.com/invite/bBy368s">at this link</a>.</p>
+<figure><img src="/posts/images/nerf/BAUS.jpeg"
+         alt="Logo for the Bay Area Ultra Stock (BAUS) dart tag group with whom I tend to play most of my ultrastock games with. If you are in the San Fransico Bay Area you can get involved by joining the group&amp;rsquo;s discord at this link." width="80%"/><figcaption>
+            <p>Logo for the Bay Area Ultra Stock (BAUS) dart tag group with whom I tend to play most of my ultrastock games with. If you are in the San Fransico Bay Area you can get involved by joining the group&rsquo;s discord <a href="https://discord.com/invite/bBy368s" target="_blank">at this link</a>.</p>
         </figcaption>
 </figure>
 
@@ -282,6 +303,10 @@ dart tag hobby; now go and bask in its glory.</p>
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -309,6 +334,10 @@ dart tag hobby; now go and bask in its glory.</p>
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>
@@ -446,6 +475,10 @@ dart tag hobby; now go and bask in its glory.</p>
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -473,6 +506,10 @@ dart tag hobby; now go and bask in its glory.</p>
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>

@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.78.2" />
+<meta name="generator" content="Hugo 0.104.2" />
 
 
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
@@ -30,10 +30,10 @@
 <meta property="og:description" content="Turning the jungle into punch cards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
 One of the aspects of the war that fascinated me the most was the push by the the then Secretary of Defense, Robert McNamara, to quantify as much of the war as was computationally possible. One of the most storage intensive of McNamara&rsquo;s efforts was the Hamlet Evaluation System, which attempted to quantify the degree to which ~12,000 small, rural Vietnamese villages had been pacified." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.com/posts/vietnam_data/" />
-<meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
+<meta property="og:url" content="https://ethanholleman.com/posts/vietnam_data/" /><meta property="og:image" content="https://ethanholleman.com/img/og.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-12-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-12-12T00:00:00+00:00" />
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
@@ -81,14 +81,40 @@ One of the aspects of the war that fascinated me the most was the push by the th
   }
 </script>
 
-    <header>
-    <div class="container-lg clearfix">
-        <div class="col-12 header">
-            <a class="title-main" href="https://ethanholleman.com">Ethan Holleman</a>
-            
-        </div>
-    </div>
+    <style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/static/img/path1148.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  header {
+    min-height:160px;
+}
+
+
+</style>
+<header>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:70px">Ethan Holleman</h1>
+  </div>
+</div>
 </header>
+
 
     <main>
         <div class="container-lg clearfix">
@@ -119,8 +145,7 @@ efforts was the Hamlet Evaluation System, which attempted to quantify the degree
 to which ~12,000 small, rural Vietnamese villages had been pacified. A RAND
 corporation report found the program was producing 90,000 pages of data every
 month. More than could have ever been useful.</p>
-<figure>
-    <img src="/posts/images/doc.png"/> <figcaption>
+<figure><img src="/posts/images/doc.png"/><figcaption>
             <h4>Example of data produced by the Hamlet Evaluation Program showing change in hamlet classifications over time</h4>
         </figcaption>
 </figure>
@@ -153,8 +178,7 @@ PHMIS was used as a catalogue for the operations of the
 a CIA headed counter-insurgency operation that among other techniques, employed
 torture and assassination to identify and kill Viet-Cong and Viet-Cong
 collaborators.</p>
-<figure>
-    <img src="/posts/images/flowchart.png"/> <figcaption>
+<figure><img src="/posts/images/flowchart.png"/><figcaption>
             <h4>Flowchart depicting data schema of the Phung Hoang Mangement Information System, March 1972 report</h4>
         </figcaption>
 </figure>
@@ -184,8 +208,7 @@ EBCDIC. At this point I had no idea what EBCDIC encoding was but some quick
 googling corrected that. Basically, EBCDIC (Extended Binary Coded Decimal Interchange Code)
 was created by IBM in the late 1950s and used a perplexing (see EBCDIC wikipedia page
 criticism and humor) eight-bit character encoding for mainframe computers.</p>
-<figure>
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Blue-punch-card-front-horiz_top-char-contrast-stretched.png/1920px-Blue-punch-card-front-horiz_top-char-contrast-stretched.png"/> <figcaption>
+<figure><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Blue-punch-card-front-horiz_top-char-contrast-stretched.png/1920px-Blue-punch-card-front-horiz_top-char-contrast-stretched.png"/><figcaption>
             <h4>Example of EBCDIC encoded punch card. </h4>
         </figcaption>
 </figure>
@@ -443,6 +466,10 @@ National Archives entry <a href="https://catalog.archives.gov/id/17364134" targe
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -470,6 +497,10 @@ National Archives entry <a href="https://catalog.archives.gov/id/17364134" targe
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>
@@ -607,6 +638,10 @@ National Archives entry <a href="https://catalog.archives.gov/id/17364134" targe
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -634,6 +669,10 @@ National Archives entry <a href="https://catalog.archives.gov/id/17364134" targe
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>

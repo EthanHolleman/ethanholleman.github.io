@@ -40,8 +40,7 @@ When these terms are searched the source html ends up being rendered on the actu
       <guid>https://ethanholleman.com/posts/polo_published/</guid>
       <description>Polo: an open-source graphical user interface for crystallization screening was just published in the Journal of Applied Crystallography. It is my first academic paper as well as my first first-author paper.
 Please check out the article at this link!
-Below are a few of the figures from the article, click to be taken to the full descriptions.
-  </description>
+Below are a few of the figures from the article, click to be taken to the full descriptions.</description>
     </item>
     
     <item>
@@ -86,7 +85,7 @@ While reading about the best way to aggregate and do analyise on these results I
       <description>I spent most of the day today learning about Javascript and CSS by building a (very ameutur) website that you can use to test your Poker pot odds calculation skills.
 Determining pot odds is useful as when compared to the probability of winning a hand the call&amp;rsquo;s expected value can be approximated.
 You can visit the website at potoddsquiz.com view the the code at the GitHub page or use the website embedded directly below.
- This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.</description>
+This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.</description>
     </item>
     
     <item>
@@ -134,7 +133,7 @@ Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by 
       <guid>https://ethanholleman.com/projects/polo/</guid>
       <description>This was a project I worked on as part of the BioXFEL summer internship program. I worked with Dr. Sarah Bowman and other members of Hauptman-Woodward Medical Research Institute (HWI).
 If you are short on time and don&amp;rsquo;t want to read these entire post here are the important links.
- Polo website Polo poster Video Presentation  So what is &amp;ldquo;high-throughput crystallography&amp;rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence.</description>
+Polo website Polo poster Video Presentation So what is &amp;ldquo;high-throughput crystallography&amp;rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence.</description>
     </item>
     
     <item>
@@ -146,7 +145,7 @@ If you are short on time and don&amp;rsquo;t want to read these entire post here
       <description>I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
 For example I would start R and install a package I needed and load the library with no problem.
 The code below would run without a problem.
-install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet)  But then calling the running the same script from a batch file fails to import the library.
+install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet) But then calling the running the same script from a batch file fails to import the library.
 I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word.</description>
     </item>
     

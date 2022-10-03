@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.78.2" />
+<meta name="generator" content="Hugo 0.104.2" />
 
 
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
@@ -29,12 +29,12 @@
 <meta property="og:title" content="Polo" />
 <meta property="og:description" content="This was a project I worked on as part of the BioXFEL summer internship program. I worked with Dr. Sarah Bowman and other members of Hauptman-Woodward Medical Research Institute (HWI).
 If you are short on time and don&rsquo;t want to read these entire post here are the important links.
- Polo website Polo poster Video Presentation  So what is &ldquo;high-throughput crystallography&rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence." />
+Polo website Polo poster Video Presentation So what is &ldquo;high-throughput crystallography&rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.com/projects/polo/" />
-<meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
+<meta property="og:url" content="https://ethanholleman.com/projects/polo/" /><meta property="og:image" content="https://ethanholleman.com/img/og.png"/><meta property="article:section" content="projects" />
 <meta property="article:published_time" content="2020-11-22T13:49:27-08:00" />
 <meta property="article:modified_time" content="2020-11-22T13:49:27-08:00" />
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
@@ -42,7 +42,7 @@ If you are short on time and don&rsquo;t want to read these entire post here are
 <meta name="twitter:title" content="Polo"/>
 <meta name="twitter:description" content="This was a project I worked on as part of the BioXFEL summer internship program. I worked with Dr. Sarah Bowman and other members of Hauptman-Woodward Medical Research Institute (HWI).
 If you are short on time and don&rsquo;t want to read these entire post here are the important links.
- Polo website Polo poster Video Presentation  So what is &ldquo;high-throughput crystallography&rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence."/>
+Polo website Polo poster Video Presentation So what is &ldquo;high-throughput crystallography&rdquo;? Lets say you are a researcher, trying to develop a treatment for a novel virus that is quickly spreading across the globe. You know that the binding between the viruses outer spike protein and a receptor on the cells of lung tissue is critical to the pathogens virulence."/>
 
 
 
@@ -83,14 +83,40 @@ If you are short on time and don&rsquo;t want to read these entire post here are
   }
 </script>
 
-    <header>
-    <div class="container-lg clearfix">
-        <div class="col-12 header">
-            <a class="title-main" href="https://ethanholleman.com">Ethan Holleman</a>
-            
-        </div>
-    </div>
+    <style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/static/img/path1148.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  header {
+    min-height:160px;
+}
+
+
+</style>
+<header>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:70px">Ethan Holleman</h1>
+  </div>
+</div>
 </header>
+
 
     <main>
         <div class="container-lg clearfix">
@@ -133,8 +159,7 @@ developed, the most commonly employed being X-ray crystallography (although keep
 emerging <a href="https://www.nature.com/articles/s41467-019-10368-w" target="_blank">cryo-EM</a> technologies.)</p>
 <p>Just like minerals in the Earth, proteins can form crystalize, organizing into
 an infinitely repeating, regular pattern of molecules.</p>
-<figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Protein_crystals_grown_in_space.jpg/1024px-Protein_crystals_grown_in_space.jpg" width="500" height="500"/> <figcaption>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Protein_crystals_grown_in_space.jpg/1024px-Protein_crystals_grown_in_space.jpg" width="500" height="500"/><figcaption>
             <h4>Protein crystals grown in space. NASA Marshall Space Flight Center (NASA-MSFC) - NASA</h4>
         </figcaption>
 </figure>
@@ -144,8 +169,7 @@ of X-rays and the repeating structure of protein crystals to &ldquo;amplify&rdqu
 extremely small signal produced by a single molecule allowing researchers, along
 with the help of a lot of fast-fourier transforms to piece together the 3D structure
 of a protein with resolutions below 1.5 Å (angstroms).</p>
-<figure>
-    <img src="/projects/images/Lysozyme.jpg"/> <figcaption>
+<figure><img src="/projects/images/Lysozyme.jpg"/><figcaption>
             <h4>Crystal structure of lysozyme as rendered by David Goodsell doi:10.2210/rcsb_pdb/mom_2000_9</h4>
         </figcaption>
 </figure>
@@ -166,8 +190,7 @@ or expensive to obtain.</p>
 microscopy, and nano-liter well sizes in order to do effectively the same process
 while screening more chemical conditions and using less protein. This makes it
 appealing for researchers working with many or difficult to crystalize proteins.</p>
-<figure>
-    <img src="/posts/images/Dec2020_XtalsMonth_web.png"/> <figcaption>
+<figure><img src="/posts/images/Dec2020_XtalsMonth_web.png"/><figcaption>
             <h4>SARS-CoV-2 protein crystals grown at Hauptmann-Woodward Medical Research Institute High-Throughput Crystallization Center</h4>
         </figcaption>
 </figure>
@@ -179,8 +202,7 @@ can produce over 15360 images that have to been sorted though to determine
 if any contain crystals. This is the worst king of monotonous task as it is
 highly repetitive but yet required acute concentration, as missing a crystal
 in one image could mean the difference between a successful and failed study.</p>
-<figure>
-    <img src="/posts/images/lots_of_data.png" width="600" height="600"/> <figcaption>
+<figure><img src="/posts/images/lots_of_data.png" width="600" height="600"/><figcaption>
             <h4>Representation of the image data that would be created by a typical high-throughput screen of one protein sample at HWI. Each pixel represents one image a researcher would have to manually review.</h4>
         </figcaption>
 </figure>
@@ -203,14 +225,12 @@ a manuscript which is currently under review by the Journal of Applied Crystallo
 <p>Here are a few images of some of the Polo interfaces, for full details, user-guides,
 code documentation and video tutorials please visit the
 <a href="https://hauptman-woodward.github.io/Marco_Polo/" target="_blank">Polo website</a>.</p>
-<figure>
-    <img src="/posts/images/Fig2_update.png"/> <figcaption>
+<figure><img src="/posts/images/Fig2_update.png"/><figcaption>
             <h4>Composited image of different viewing options of the Polo slideshow viewer interface</h4>
         </figcaption>
 </figure>
 
-<figure>
-    <img src="/posts/images/Fig3.png" width="600" height="600"/> <figcaption>
+<figure><img src="/posts/images/Fig3.png" width="600" height="600"/><figcaption>
             <h4>Composited image of different viewing options of the Polo plate viewer interface</h4>
         </figcaption>
 </figure>
@@ -269,6 +289,10 @@ facilities to extend the functionality and flexibility of Polo.</p>
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -296,6 +320,10 @@ facilities to extend the functionality and flexibility of Polo.</p>
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>
@@ -433,6 +461,10 @@ facilities to extend the functionality and flexibility of Polo.</p>
             </li>
             
             <li>
+                <a href="/3dobjects/">3D Objects</a>
+            </li>
+            
+            <li>
                 <a href="/search/">Search</a>
             </li>
             
@@ -460,6 +492,10 @@ facilities to extend the functionality and flexibility of Polo.</p>
             
             <span>
                 <a href="/tags/3d-printing/">3D Printing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/about-this-site/">about this site</a>
             </span>
             
             <span>

@@ -1,294 +1,186 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://ethanholleman.com/tags/about-this-site/</loc>
+    <lastmod>2022-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/blogs/</loc>
+    <lastmod>2022-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/</loc>
+    <lastmod>2022-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/sitebanner/</loc>
+    <lastmod>2022-10-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ethanholleman.com/tags/3d-printing/</loc>
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ethanholleman.com/tags/blogs/</loc>
-    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/foam-pro-tour/</loc>
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/nerf/</loc>
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ethanholleman.com/posts/</loc>
-    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/hobby-grade-nerf/</loc>
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/davis-guides/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/davis-wifi-on-linux/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/linux/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/epo/</loc>
     <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/gsa_rep/</loc>
     <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/igg/</loc>
     <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/conway_game_of_life_implementation/</loc>
     <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/programming/</loc>
     <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/python/</loc>
     <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/national-parks/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/death_valley/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/cida_hackathon/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/hackathon/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/california_legislature_search/</loc>
     <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/bugs/</loc>
     <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/polo_published/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/r/</loc>
     <lastmod>2021-02-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/leafly_data/</loc>
     <lastmod>2021-02-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/recursive_citations/</loc>
     <lastmod>2021-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/national-bridge-inventory/</loc>
     <lastmod>2021-02-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/nbi_encoding/</loc>
     <lastmod>2021-02-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/cooking/</loc>
     <lastmod>2021-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/tonkatsu/</loc>
     <lastmod>2021-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/pymol/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/ligand_plotting/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/poker/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/potodds/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/guides/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/gromacs_install/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/yosemite/</loc>
     <lastmod>2020-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/day-trips/</loc>
     <lastmod>2020-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/skribbl.io_words/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/covid_data/</loc>
     <lastmod>2020-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/cog_sars/</loc>
     <lastmod>2020-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/christmas_card/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/christmas-card/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/running_winnings/</loc>
     <lastmod>2020-12-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/zoom_poker/</loc>
     <lastmod>2020-12-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/vietnam_data/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/data-wrangling/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/fishing/</loc>
     <lastmod>2020-11-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/putah_fishing/</loc>
     <lastmod>2020-11-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/crystallography/</loc>
     <lastmod>2020-11-22T13:49:27-08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/projects/polo/</loc>
     <lastmod>2020-11-22T13:49:27-08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/projects/</loc>
     <lastmod>2020-11-22T13:49:27-08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/research/</loc>
     <lastmod>2020-11-22T13:49:27-08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/genome_cluster/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/posts/letter_to_d113/</loc>
     <lastmod>2020-07-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/tags/writing/</loc>
     <lastmod>2020-07-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ethanholleman.com/privacy/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://ethanholleman.com/3dobjects/</loc>
+  </url><url>
     <loc>https://ethanholleman.com/search/</loc>
   </url>
-  
 </urlset>
