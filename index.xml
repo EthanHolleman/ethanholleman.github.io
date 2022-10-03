@@ -30,6 +30,16 @@ These are strategies used to fill in the internal space of a printed object.</de
     </item>
     
     <item>
+      <title>Print TPU without a direct drive extruder</title>
+      <link>https://ethanholleman.com/posts/print_tpu/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/print_tpu/</guid>
+      <description>These recommendations are in addition to general 3D printing best practices, namely proper bed leveling and cleaning. Without a clean and level bed, none of this advice will do you any good.
+1. Print a filament guide; preferably one that uses a bearing for your printer I print on an Ender3 and use this guide by Mark Villela. A filament guide is an abosulte requirement to reduce the angle the filament must enter the extruder gear at. Without one, the tension on the filament at the extruder will be to great for it to push filament into the hot end.</description>
+    </item>
+    
+    <item>
       <title>How to actually connect to UC Davis campus wifi (Eduroam) on Linux</title>
       <link>https://ethanholleman.com/posts/davis-wifi-on-linux/</link>
       <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
