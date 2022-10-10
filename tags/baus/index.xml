@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BAUS on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/baus/</link>
+    <description>Recent content in BAUS on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/baus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BAUS 40 Sunnyvale: Gameplay footage</title>
+      <link>https://ethanholleman.com/posts/baus-40/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/baus-40/</guid>
+      <description>A little while ago I was at Bay Area Ultra Stock&amp;rsquo;s 40th meetup and managed to record a few of the games. Played at Braly Elementary school in Sunnyvale California.
+For these games I was playing with my Pump Skewer by SillyButts designs. All parts were printed on my modified Ender3V2.</description>
+    </item>
+    
+  </channel>
+</rss>

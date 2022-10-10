@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ethanholleman.com/tags/about-this-site/</loc>
-    <lastmod>2022-10-02T00:00:00+00:00</lastmod>
+    <loc>https://ethanholleman.com/tags/baus/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/baus-40/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/tags/blogs/</loc>
-    <lastmod>2022-10-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/nerf/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/posts/</loc>
+    <lastmod>2022-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/about-this-site/</loc>
     <lastmod>2022-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/posts/sitebanner/</loc>
@@ -18,9 +27,6 @@
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/tags/foam-pro-tour/</loc>
-    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ethanholleman.com/tags/nerf/</loc>
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/posts/hobby-grade-nerf/</loc>

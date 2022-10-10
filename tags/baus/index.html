@@ -15,7 +15,7 @@
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/images/favicon.ico" />
 
 
-<title>Using local R packages on UC Davis Genome Center cluster - Ethan Holleman</title>
+<title>BAUS - Ethan Holleman</title>
 
 
 <meta name="author" content="Ethan Holleman" />
@@ -24,29 +24,17 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta name="keywords" content="programming, blogs, guides" />
-
-<meta property="og:title" content="Using local R packages on UC Davis Genome Center cluster" />
-<meta property="og:description" content="I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
-For example I would start R and install a package I needed and load the library with no problem.
-The code below would run without a problem.
-install.packages(&quot;glmnet&quot;) library(glmnet) But then calling the running the same script from a batch file fails to import the library.
-I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ethanholleman.com/posts/genome_cluster/" /><meta property="og:image" content="https://ethanholleman.com/img/og.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-11-03T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-11-03T00:00:00+00:00" />
+<meta property="og:title" content="BAUS" />
+<meta property="og:description" content="A minimal Hugo theme with nice theme color." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ethanholleman.com/tags/baus/" /><meta property="og:image" content="https://ethanholleman.com/img/og.png"/>
 
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ethanholleman.com/img/og.png"/>
 
-<meta name="twitter:title" content="Using local R packages on UC Davis Genome Center cluster"/>
-<meta name="twitter:description" content="I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
-For example I would start R and install a package I needed and load the library with no problem.
-The code below would run without a problem.
-install.packages(&quot;glmnet&quot;) library(glmnet) But then calling the running the same script from a batch file fails to import the library.
-I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word."/>
+<meta name="twitter:title" content="BAUS"/>
+<meta name="twitter:description" content="A minimal Hugo theme with nice theme color."/>
 
 
 
@@ -127,41 +115,32 @@ I tried multiple possible fixes with no success until I was tipped of by a curre
             
             <div class="col-12 col-md-9 float-left content">
                 
-<article>
-    
+
+<div class="page-info">
+    <span>Posts with the tag BAUS: </span>
+</div>
+
+
+
+<div class="post">
     <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/genome_cluster/">Using local R packages on UC Davis Genome Center cluster</a>
+        <a href="https://ethanholleman.com/posts/baus-40/">BAUS 40 Sunnyvale: Gameplay footage</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-11-03</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/guides">guides</a>&nbsp;</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-10-09</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/nerf">Nerf</a>&nbsp;<a href="/tags/baus">BAUS</a>&nbsp;</span>
 
     </div>
-    
-    
-    <div class="post-content markdown-body">
-        <p>I ran into a few issues trying to figure out
-how to run batch scripts on the Genome Center
-cluster. One of the least documented and hardest to figure out was how to successfully
-load R packages I had installed to my user directory.</p>
-<p>For example I would start R and install a package I needed and load the library with
-no problem.</p>
-<p>The code below would run without a problem.</p>
-<pre><code class="language-R">install.packages(&quot;glmnet&quot;)
-library(glmnet)
-</code></pre>
-<p>But  then calling the running the same script from a batch file fails to import the library.</p>
-<p>I tried multiple possible fixes with no success
-until I was tipped of by a current lab member
-about the magic word.</p>
-<pre><code>aklog
-</code></pre>
-<p>For some reason putting this right after
-the SBATCH lines in the script changed something that allowed SLURM to see the
-R packages in my user directory.</p>
-<p>It is not currently documented, but when it hopefully is I will link to the page here.</p>
-
+    <div class="post-item post-summary markdown-body">
+        A little while ago I was at Bay Area Ultra Stock&rsquo;s 40th meetup and managed to record a few of the games. Played at Braly Elementary school in Sunnyvale California.
+For these games I was playing with my Pump Skewer by SillyButts designs. All parts were printed on my modified Ender3V2.
     </div>
-</article>
+</div>
+
+
+
+
+
+
 
 
 
@@ -501,8 +480,6 @@ R packages in my user directory.</p>
             
         </div>
     </div>
-    
-    
     
     
   </div>
