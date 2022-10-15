@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>laser cutting on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/laser-cutting/</link>
+    <description>Recent content in laser cutting on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/laser-cutting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laser cut street map coasters using Glowforge</title>
+      <link>https://ethanholleman.com/posts/streetmap-coasters/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/streetmap-coasters/</guid>
+      <description>This is a project I put together for the parents before I headed home for the weekend using the Glowforge laser cutter at the maker space at the UC Davis craft center.
+The project consisted of generating street maps of a few personally notable places using SnazzyMaps. I converted these maps to bitmaps using Inkscape which I also used for the rest of the coaster design. Coasters were cut out of medium thickness clear acrylic sheets.
+To make the box, I used MakerCase to generate the SVG plans based on the size of the coasters. I cut the box sections from medium thickness draft board and assembled with tacky glue.</description>
+    </item>
+    
+  </channel>
+</rss>
