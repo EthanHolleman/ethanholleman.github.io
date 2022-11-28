@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi Pico W LED 3D print status monitor</title>
+      <link>https://ethanholleman.com/posts/pico-print-status-indicator/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/pico-print-status-indicator/</guid>
+      <description>I am almost constantly running my 3D printer. Usually the only time it is not pumping plastic is when the laundry machine is running. Both the printer and laundry machine are plugged into the same outlet and for some reason having them both running at the same time can occasionally cause the printer to freeze and stop.
+If the girlfriend wants to start a load of laundry a common question she has for me is &amp;ldquo;How long is left on this print?&amp;rdquo; since she is nice enough to not want to risk my print failing.
+So I wanted to create a quick and easy to read indicator for how far along my printer is through a print and came up with the solution described below.</description>
+    </item>
+    
     <item>
       <title>Laser cut street map coasters using Glowforge</title>
       <link>https://ethanholleman.com/posts/streetmap-coasters/</link>
@@ -367,6 +378,16 @@ I tried multiple possible fixes with no success until I was tipped of by a curre
       <guid>https://ethanholleman.com/posts/letter_to_d113/</guid>
       <description>This was a letter I wrote to my local high school district board during the early days of lock down titled &amp;ldquo;Creative Approaches in This Coming School Year&amp;rdquo;.
 This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ethanholleman.com/posts/should-i-buy-3d-printer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/should-i-buy-3d-printer/</guid>
+      <description>Should you buy a 3D printer in 2023? There are an increasing number of short form videos floating around showing people creating various objects with their 3D printers. These are great at increasing the visibility of this frankly incredible technology but as with most infomration in this format. It fails to convey the whole story behind 3D printer ownership.
+So I wanted to put this post out there as someone who has (according to my printer statistics) printed over 7.5 kilometers worth of filament in the past year and a half or so before you purchase for yourself, or someone else a new 3D printer.</description>
     </item>
     
   </channel>

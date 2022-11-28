@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ethanholleman.com/tags/3d-printing/</loc>
+    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ethanholleman.com/tags/blogs/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/octoprint/</loc>
+    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/</loc>
+    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/pico-print-status-indicator/</loc>
+    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/posts/streetmap-coasters/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/tags/laser-cutting/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ethanholleman.com/posts/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/tags/baus/</loc>
@@ -28,9 +37,6 @@
   </url><url>
     <loc>https://ethanholleman.com/posts/sitebanner/</loc>
     <lastmod>2022-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ethanholleman.com/tags/3d-printing/</loc>
-    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/tags/foam-pro-tour/</loc>
     <lastmod>2022-06-12T00:00:00+00:00</lastmod>
@@ -190,6 +196,8 @@
   </url><url>
     <loc>https://ethanholleman.com/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/should-i-buy-3d-printer/</loc>
   </url><url>
     <loc>https://ethanholleman.com/privacy/</loc>
     <priority>0</priority>

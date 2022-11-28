@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Octoprint on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/octoprint/</link>
+    <description>Recent content in Octoprint on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/octoprint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi Pico W LED 3D print status monitor</title>
+      <link>https://ethanholleman.com/posts/pico-print-status-indicator/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/pico-print-status-indicator/</guid>
+      <description>I am almost constantly running my 3D printer. Usually the only time it is not pumping plastic is when the laundry machine is running. Both the printer and laundry machine are plugged into the same outlet and for some reason having them both running at the same time can occasionally cause the printer to freeze and stop.
+If the girlfriend wants to start a load of laundry a common question she has for me is &amp;ldquo;How long is left on this print?&amp;rdquo; since she is nice enough to not want to risk my print failing.
+So I wanted to create a quick and easy to read indicator for how far along my printer is through a print and came up with the solution described below.</description>
+    </item>
+    
+  </channel>
+</rss>
