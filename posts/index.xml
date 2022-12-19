@@ -6,7 +6,27 @@
     <description>Recent content in Posts on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts and feedback: MCB 162 TAship</title>
+      <link>https://ethanholleman.com/posts/mcb-162-2022/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/mcb-162-2022/</guid>
+      <description>This past quarter I was the teaching assistant for the MCB-162; and upper division human genetics course here at UC Davis. This was my second time as a TA and overall enjoyed my role in the class. This class was about 60% the size of the previous class I TA&amp;rsquo;ed for which was nice in terms of reducing the amount of grading required and being able to spend more time with individual students during office hours.
+Despite my best efforts attendance at office hours was still fairly low with 3-4 semi-regular students and sporadic attendance from the rest of the class.</description>
+    </item>
+    
+    <item>
+      <title>Why are (some) maker spaces so empty?</title>
+      <link>https://ethanholleman.com/posts/why-are-maker-spaces-empty/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/why-are-maker-spaces-empty/</guid>
+      <description>Where is everyone? I am lucky to live within biking distance of the Davis Craft Center, an excellent facility that provides screen printing, woodworking, welding, and &amp;ldquo;maker&amp;rdquo; resources (3D printer, laser cutter, soldering kit, etc.) to UC Davis students and community members at very reasonable prices.
+I only learned about the maker space at the Craft center within the last three months; since then have been visiting semi-regularly to work on my projects. The main benefit of working there for me is that there is significantly more space compared to my one bedroom apartment and it is cat free. This is especially helpful when working with anything remotely string shaped.</description>
+    </item>
+    
     <item>
       <title>Raspberry Pi Pico W LED 3D print status monitor</title>
       <link>https://ethanholleman.com/posts/pico-print-status-indicator/</link>
@@ -378,16 +398,6 @@ I tried multiple possible fixes with no success until I was tipped of by a curre
       <guid>https://ethanholleman.com/posts/letter_to_d113/</guid>
       <description>This was a letter I wrote to my local high school district board during the early days of lock down titled &amp;ldquo;Creative Approaches in This Coming School Year&amp;rdquo;.
 This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ethanholleman.com/posts/should-i-buy-3d-printer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ethanholleman.com/posts/should-i-buy-3d-printer/</guid>
-      <description>Should you buy a 3D printer in 2023? There are an increasing number of short form videos floating around showing people creating various objects with their 3D printers. These are great at increasing the visibility of this frankly incredible technology but as with most infomration in this format. It fails to convey the whole story behind 3D printer ownership.
-So I wanted to put this post out there as someone who has (according to my printer statistics) printed over 7.5 kilometers worth of filament in the past year and a half or so before you purchase for yourself, or someone else a new 3D printer.</description>
     </item>
     
   </channel>

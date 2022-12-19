@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ethanholleman.com/tags/3d-printing/</loc>
-    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://ethanholleman.com/tags/blogs/</loc>
-    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ethanholleman.com/tags/octoprint/</loc>
-    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/posts/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/taship/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/teaching/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/mcb-162-2022/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/3d-printing/</loc>
+    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/posts/why-are-maker-spaces-empty/</loc>
+    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ethanholleman.com/tags/octoprint/</loc>
     <lastmod>2022-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ethanholleman.com/posts/pico-print-status-indicator/</loc>
@@ -196,8 +208,6 @@
   </url><url>
     <loc>https://ethanholleman.com/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ethanholleman.com/posts/should-i-buy-3d-printer/</loc>
   </url><url>
     <loc>https://ethanholleman.com/privacy/</loc>
     <priority>0</priority>

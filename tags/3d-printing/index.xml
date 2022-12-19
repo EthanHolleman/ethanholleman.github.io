@@ -6,7 +6,17 @@
     <description>Recent content in 3D Printing on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why are (some) maker spaces so empty?</title>
+      <link>https://ethanholleman.com/posts/why-are-maker-spaces-empty/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/why-are-maker-spaces-empty/</guid>
+      <description>Where is everyone? I am lucky to live within biking distance of the Davis Craft Center, an excellent facility that provides screen printing, woodworking, welding, and &amp;ldquo;maker&amp;rdquo; resources (3D printer, laser cutter, soldering kit, etc.) to UC Davis students and community members at very reasonable prices.
+I only learned about the maker space at the Craft center within the last three months; since then have been visiting semi-regularly to work on my projects. The main benefit of working there for me is that there is significantly more space compared to my one bedroom apartment and it is cat free. This is especially helpful when working with anything remotely string shaped.</description>
+    </item>
+    
     <item>
       <title>Raspberry Pi Pico W LED 3D print status monitor</title>
       <link>https://ethanholleman.com/posts/pico-print-status-indicator/</link>
