@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genetics on Ethan Holleman</title>
+    <link>https://ethanholleman.com/tags/genetics/</link>
+    <description>Recent content in genetics on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/genetics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I may have polycistic kidney disease: Here&#39;s how I designed a DIY genetic test for it</title>
+      <link>https://ethanholleman.com/posts/pkd2/</link>
+      <pubDate>Thu, 29 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/pkd2/</guid>
+      <description>WARNING WARNING WARNING
+Nothing in this article should be considered medical advice or be diagnostic in any way. This article is purely for educational purposes for those interested in learning about the basic concepts that underlie genetic testing.
+The bad news and some background on genetic diseases Due to a recent harrowing and ongoing medical odyssey in my immediate family I learned that I have a 50% change of having autosomal dominant polycystic kidney disease.
+Basically, there is a 50% change I inherited a copy of the polycistic kidney disease II gene that contains a missense mutation. This type of mutation changes a single base pair (letter) of the DNA sequence.</description>
+    </item>
+    
+  </channel>
+</rss>
