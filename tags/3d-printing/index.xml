@@ -6,7 +6,17 @@
     <description>Recent content in 3D Printing on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a mostly 3D printed 3D printer</title>
+      <link>https://ethanholleman.com/posts/rook_printing_a_printer/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/rook_printing_a_printer/</guid>
+      <description>Over the past two months or so I have worked on-and-off on what was a really interesting a fun build; a mostly 3D printed 3D printer called the Rook by Rolohaun. This is an open source DIY printer with the goal of accessibility and low cost.
+This was my first DIY printer build and I would highly recommend the Rook to anyone who has been thinking about or is interested in DIY printers but is unsure they want to make a one to two thousand dollar investment in a DIY machine like the Voron without first gaining some lower stakes experience.</description>
+    </item>
+    
     <item>
       <title>Why are (some) maker spaces so empty?</title>
       <link>https://ethanholleman.com/posts/why-are-maker-spaces-empty/</link>

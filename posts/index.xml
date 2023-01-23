@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Ethan Holleman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a mostly 3D printed 3D printer</title>
+      <link>https://ethanholleman.com/posts/rook_printing_a_printer/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/rook_printing_a_printer/</guid>
+      <description>Over the past two months or so I have worked on-and-off on what was a really interesting a fun build; a mostly 3D printed 3D printer called the Rook by Rolohaun. This is an open source DIY printer with the goal of accessibility and low cost.
+This was my first DIY printer build and I would highly recommend the Rook to anyone who has been thinking about or is interested in DIY printers but is unsure they want to make a one to two thousand dollar investment in a DIY machine like the Voron without first gaining some lower stakes experience.</description>
+    </item>
+    
     <item>
       <title>I may have polycistic kidney disease: Here&#39;s how I designed a DIY genetic test for it</title>
       <link>https://ethanholleman.com/posts/pkd2/</link>
@@ -410,6 +420,15 @@ I tried multiple possible fixes with no success until I was tipped of by a curre
       <guid>https://ethanholleman.com/posts/letter_to_d113/</guid>
       <description>This was a letter I wrote to my local high school district board during the early days of lock down titled &amp;ldquo;Creative Approaches in This Coming School Year&amp;rdquo;.
 This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ethanholleman.com/posts/3d_printing_as_no_public_utility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/3d_printing_as_no_public_utility/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -111,6 +111,20 @@
 
 <div class="post">
     <h2 class="post-item post-title">
+        <a href="https://ethanholleman.com/posts/davis-wifi-on-linux/">How to actually connect to UC Davis campus wifi (Eduroam) on Linux</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-08-19</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/davis-guides">Davis guides</a>&nbsp;<a href="/tags/linux">Linux</a>&nbsp;</span>
+
+    </div>
+    <div class="post-item post-summary markdown-body">
+        Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
+Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file. openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation Save and reboot.
+    </div>
+</div>
+
+<div class="post">
+    <h2 class="post-item post-title">
         <a href="https://ethanholleman.com/posts/epo/">2021 candidacy for IGG education policy officer</a>
     </h2>
     <div class="post-item post-meta">
@@ -243,21 +257,6 @@ It turns out it didn&rsquo;t take that much.
     <div class="post-item post-summary markdown-body">
         The way academic citations are measured currently is pretty standardized. Authors of article A accrue a citation whenever their article is directly cited in article B. But there is likely a large amount of work that was cited by article A but not by article B. The authors of this work which indirectly contributed to article B by contributing to article A (which B cites) will not see a citation.
 What if instead citing one article triggered a recursive call all the way down the network formed by articles and their citations? Would this end up eventually citing almost all articles in a field?
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://ethanholleman.com/posts/nbi_encoding/">Potential NBI encoding error</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-02-09</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/programming">programming</a>&nbsp;<a href="/tags/blogs">blogs</a>&nbsp;<a href="/tags/python">Python</a>&nbsp;<a href="/tags/national-bridge-inventory">National Bridge Inventory</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        NBI Background The National Bridge Inventory (NBI) is a program of the Federal Highway Administration which is an agency within the U.S Department of Transportation. The NBI makes available records and statistics about all the bridges in the United States which includes information about bridge location, integrity, inspection history and usage.
-Potential encoding discrepancy As a side project I have been working on creating a more exhaustive Python package for parsing NBI data. This is mainly focused on decoding the numerical representations present in data files to their semantic meanings specified in the NBI documentation.
-I ran into errors when trying to decode the state code fields, which based on the available documentation uses the coding table below.
     </div>
 </div>
 
@@ -733,7 +732,7 @@ I ran into errors when trying to decode the state code fields, which based on th
                 Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
             </p>
             
-            <span>&copy; 2020-2022
+            <span>&copy; 2020-2023
                 <a href="https://ethanholleman.com">Ethan Holleman</a>
                  | <a href="https://github.com/EthanHolleman/ethanholleman.github.io">Source code</a>  | <a href="https://ethanholleman.com/privacy">Privacy policy</a>
                 
